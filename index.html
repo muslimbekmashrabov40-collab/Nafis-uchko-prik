@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nafis | go'zallik saloni va sartaroshxona</title>
+<meta name="description" content="Nafis go'zallik saloni: soch, manikyur, yuz parvarishi, qosh va kiprik, erkaklar sartaroshxonasi. Onlayn yozilish.">
+<meta name="theme-color" content="#3a1d3b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nafis | go'zallik saloni va sartaroshxona">
+<meta property="og:description" content="Xizmat va ustani tanlang, qulay vaqtga onlayn yoziling.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233a1d3b'/%3E%3Cpath d='M18 52V30a14 14 0 0 1 28 0v22' fill='none' stroke='%23d4829a' stroke-width='5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#3a1d3b; --rose:#d4829a; --rose-d:#b5617b; --blush:#fbeff1; --cream:#fff9f5; --gold:#b8894a; --sage:#6f9484;
+  --line:#ecd9dd; --mute:#7a6577; --ink:#2b1a2c;
+  --display:'Cormorant Garamond',Georgia,serif; --body:'Manrope',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--body);color:var(--ink);background:var(--cream);line-height:1.6;font-size:16.5px}
+a{color:inherit}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+header{background:var(--cream);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 20px;max-width:1120px;margin:0 auto;flex-wrap:wrap}
+.logo{font-family:var(--display);font-weight:700;font-size:2rem;text-decoration:none;color:var(--plum);letter-spacing:.02em}
+nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:600;font-size:.9rem;color:var(--plum)}
+nav a:hover{color:var(--rose-d)}
+nav .tel{color:var(--rose-d);font-weight:800}
+.langs{display:flex;gap:4px}
+.langs button{background:transparent;border:2px solid var(--line);color:var(--plum);border-radius:6px;padding:1px 9px;font-weight:800;font-size:.78rem;cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
+
+.btn{display:inline-block;background:var(--plum);color:#fff;font:800 .98rem var(--body);padding:13px 26px;border-radius:999px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:#4d2850}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--plum);border:2px solid var(--plum);margin-left:10px}
+.btn.ghost:hover{background:var(--plum);color:#fff}
+.btn.light{background:#fff;color:var(--plum);border:2px solid var(--line)}
+
+.hero{background:linear-gradient(180deg,var(--blush),var(--cream));padding:56px 0 40px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eyebrow{font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;color:var(--gold);margin-bottom:12px}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.02;color:var(--plum);margin-bottom:18px}
+.hero-t p:not(.eyebrow){max-width:46ch;color:#5b4a5a;margin-bottom:26px}
+.arch{position:relative;max-width:340px;width:100%;justify-self:center}
+.arch svg{width:100%;height:auto;display:block}
+.arch-note{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-weight:800;font-size:.82rem;color:var(--plum);white-space:nowrap}
+
+.strip{background:var(--plum);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:18px;padding-bottom:18px}
+.strip b{display:block;color:#f3cfd8}
+.strip span{font-size:.9rem;opacity:.85}
+
+section{padding:68px 0}
+section.soft{background:var(--blush)}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(2rem,4.5vw,2.9rem);color:var(--plum);line-height:1.1;margin-bottom:10px}
+.sub{max-width:58ch;color:var(--mute);margin-bottom:26px}
+
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{background:#fff;border:2px solid var(--line);color:var(--plum);padding:9px 18px;border-radius:999px;font:700 .92rem var(--body);cursor:pointer;display:flex;align-items:center;gap:8px}
+.tab svg{width:20px;height:20px}
+.tab[aria-selected="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
+.grp{font-family:var(--display);font-size:1.6rem;color:var(--plum);margin:24px 0 12px;display:flex;align-items:center;gap:10px}
+.grp svg{width:26px;height:26px;color:var(--rose-d)}
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.item{background:#fff;border:2px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.item.on{border-color:var(--rose);background:#fff6f8}
+.item.off{opacity:.5}
+.item h3{font-size:1rem;line-height:1.3}
+.item .meta{font-size:.85rem;color:var(--mute)}
+.pop{display:inline-block;background:var(--gold);color:#fff;font-size:.68rem;font-weight:800;border-radius:4px;padding:0 7px;margin-left:6px;vertical-align:middle;font-style:normal}
+.item b{display:block;color:var(--rose-d);white-space:nowrap}
+.pick{background:#fff;color:var(--plum);border:2px solid var(--plum);border-radius:999px;padding:6px 14px;font:800 .82rem var(--body);cursor:pointer;white-space:nowrap}
+.pick:hover{background:var(--plum);color:#fff}
+.item.on .pick{background:var(--rose-d);border-color:var(--rose-d);color:#fff}
+.pick:disabled{cursor:not-allowed;opacity:.6}
+.right{text-align:right;display:grid;gap:6px;justify-items:end}
+
+.masters{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.master{background:#fff;border-radius:16px;padding:22px 14px;text-align:center;border:1px solid var(--line);display:grid;gap:6px;justify-items:center}
+.ava{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-size:2.2rem;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--rose),var(--gold))}
+.master:nth-child(2n) .ava{background:linear-gradient(135deg,var(--sage),var(--rose))}
+.master:nth-child(3n) .ava{background:linear-gradient(135deg,var(--plum),var(--rose))}
+.master h3{font-family:var(--display);font-size:1.4rem;color:var(--plum)}
+.master p{font-size:.84rem;color:var(--mute);line-height:1.35}
+.master .pick{margin-top:6px}
+.master.off{opacity:.55}
+
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.facts div{border-top:4px solid var(--rose);padding-top:14px}
+.facts div:nth-child(2){border-color:var(--gold)}.facts div:nth-child(3){border-color:var(--sage)}
+.facts h3{font-family:var(--display);font-size:1.4rem;color:var(--plum);margin-bottom:4px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;background:var(--blush)}
+
+form{display:grid;gap:12px}
+label,.lab{display:grid;gap:5px;font-weight:700;font-size:.88rem;color:var(--plum)}
+input,select,textarea{padding:11px 13px;border-radius:10px;border:2px solid var(--line);font:1rem var(--body);background:#fff;color:var(--ink);width:100%}
+textarea{min-height:90px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--rose);outline:0}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.msg{display:none;padding:12px 14px;border-radius:10px;font-weight:700;font-size:.93rem}
+.msg.good{display:block;background:#e3f2ea;color:#1f5a3c}
+.msg.bad{display:block;background:#fbe3e8;color:#7d1a35}
+.rv-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:30px}
+.rv{background:#fff;border:1px solid var(--line);border-left:5px solid var(--rose);border-radius:12px;padding:16px 18px}
+.rv .st{color:var(--gold);letter-spacing:2px}
+.rv small{color:var(--mute)}
+.rvform{max-width:520px}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px}
+.card{background:#fff;border:1px solid var(--line);border-top:5px solid var(--rose);border-radius:12px;padding:20px}
+.card:nth-child(2){border-top-color:var(--gold)}.card:nth-child(3){border-top-color:var(--sage)}
+.card h3{font-size:.95rem;margin-bottom:4px;color:var(--mute)}
+.card a,.card p{font-size:1.1rem;font-weight:800;text-decoration:none}
+.card small{display:block;color:var(--mute);margin-top:4px;font-weight:400}
+.mapbox{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.mapbox iframe{display:block;width:100%;height:320px;border:0}
+.mapbar{display:flex;gap:10px;flex-wrap:wrap;padding:12px}
+.mapbar .btn{padding:10px 20px;font-size:.9rem}
+footer{background:var(--plum);color:#d9c3d6;padding:24px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.f-adm{opacity:.7;text-decoration:none}.f-adm:hover{opacity:1;text-decoration:underline}
+
+/* yozilish paneli */
+.bkbtn{position:fixed;right:16px;bottom:16px;z-index:30;background:var(--rose-d);color:#fff;border:0;border-radius:999px;padding:14px 22px;font:800 1rem var(--body);cursor:pointer;box-shadow:0 8px 24px #3a1d3b55}
+.scrim{position:fixed;inset:0;background:#2b1a2c99;z-index:40;display:none}
+.scrim.open{display:block}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(460px,100%);background:#fff;z-index:50;transform:translateX(100%);visibility:hidden;transition:transform .25s,visibility .25s;overflow-y:auto;padding:20px;display:flex;flex-direction:column;gap:14px}
+.drawer.open{transform:none;visibility:visible}
+.dhead{display:flex;justify-content:space-between;align-items:center}
+.dhead h3{font-family:var(--display);font-size:1.7rem;color:var(--plum)}
+.dhead button{background:none;border:0;font-size:1.4rem;cursor:pointer;color:var(--plum)}
+.bkbox{display:flex;flex-direction:column;gap:12px}
+.empty{color:var(--mute)}
+#sel-list{list-style:none}
+#sel-list li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+#sel-list small{color:var(--mute);display:block}
+#sel-list button{background:none;border:0;color:var(--rose-d);font-weight:800;cursor:pointer;font-size:1.1rem}
+.dtotal{display:flex;justify-content:space-between;font-size:1.1rem;font-weight:800}
+.dur{color:var(--mute);font-size:.9rem;margin-top:-6px}
+.days{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.day{flex:none;width:60px;border:2px solid var(--line);background:#fff;border-radius:12px;padding:6px 0;text-align:center;cursor:pointer;color:var(--plum);font:700 .8rem var(--body)}
+.day b{display:block;font-size:1.15rem}
+.day[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
+.day:disabled{opacity:.35;cursor:not-allowed}
+.slots{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.slot{border:2px solid var(--line);background:#fff;border-radius:10px;padding:8px 0;font:800 .9rem var(--body);cursor:pointer;color:var(--plum)}
+.slot[aria-pressed="true"]{background:var(--rose-d);border-color:var(--rose-d);color:#fff}
+.hint{font-size:.85rem;color:var(--mute);font-weight:400}
+#status{display:grid;gap:14px;align-content:start}
+#status h4{font-family:var(--display);font-size:1.6rem;color:var(--plum)}
+.steps{list-style:none;display:grid;gap:8px}
+.steps li{display:flex;align-items:center;gap:10px;color:var(--mute);font-weight:600}
+.steps li::before{content:"";width:18px;height:18px;border-radius:50%;border:3px solid var(--line);flex:none}
+.steps li.done{color:var(--ink)}
+.steps li.done::before{background:var(--sage);border-color:var(--sage)}
+.steps li.now{color:var(--ink);font-weight:800}
+.steps li.now::before{border-color:var(--rose);background:var(--rose)}
+
+/* talon */
+.tkwrap{position:fixed;inset:0;z-index:70;background:#2b1a2ccc;display:flex;align-items:flex-start;justify-content:center;padding:20px 16px;overflow-y:auto}
+.tk{background:#fff;width:min(400px,100%);border-radius:14px;overflow:hidden;box-shadow:0 12px 44px #0007;margin:auto}
+.tk-bar{height:12px;background:linear-gradient(90deg,var(--rose),var(--gold),var(--sage))}
+.tk-in{padding:20px 22px 22px}
+.tk-head{text-align:center;display:grid;gap:2px;padding-bottom:12px;border-bottom:2px dashed var(--line)}
+.tk-head b{font-family:var(--display);font-size:2rem;color:var(--plum)}
+.tk-head span{font-size:.86rem;color:var(--mute)}
+.tk-meta{display:grid;gap:4px;padding:12px 0;border-bottom:2px dashed var(--line);font-size:.92rem}
+.tk-meta div{display:flex;justify-content:space-between;gap:12px}
+.tk-meta span:last-child{text-align:right;font-weight:700}
+#tk-rows{width:100%;border-collapse:collapse;font-size:.92rem;margin:10px 0}
+#tk-rows td{padding:5px 0;vertical-align:top}
+#tk-rows td:last-child{text-align:right;white-space:nowrap}
+.tk-total{display:flex;justify-content:space-between;font-size:1.15rem;font-weight:800;border-top:2px dashed var(--line);padding-top:10px}
+.tk-ok{text-align:center;margin-top:14px;font-weight:700;color:var(--sage)}
+.tk-actions{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.tk-actions .btn{flex:1 1 auto;text-align:center;padding:11px 12px;font-size:.88rem}
+
+/* kabinet */
+.kb{position:fixed;inset:0;z-index:100;background:#f7f1f3;overflow-y:auto;font-size:16px}
+.kb section{padding:0}
+.kb-top{position:sticky;top:0;z-index:2;background:var(--plum);color:#fff;display:flex;align-items:center;gap:10px;padding:12px 18px;flex-wrap:wrap}
+.kb-top>b{color:#f3cfd8;font-size:1.1rem}
+.kb-sp{flex:1}
+.kb-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.kb-tabs button,.kb-b{background:transparent;color:#fff;border:2px solid #ffffff44;border-radius:8px;padding:6px 14px;font:700 .88rem var(--body);cursor:pointer}
+.kb-tabs button[aria-pressed="true"]{background:var(--rose);border-color:var(--rose);color:var(--plum)}
+.kb-wrap{max-width:1000px;margin:0 auto;padding:18px 16px 80px}
+.kb-box{background:#fff;border:2px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+.kb-box h2{font-family:var(--body);font-size:1.05rem;margin-bottom:10px;color:var(--plum)}
+.kb-login{max-width:380px;margin:40px auto;display:grid;gap:12px}
+.kb label{display:grid;gap:3px;font-size:.8rem;font-weight:700;color:var(--mute)}
+.kb input,.kb select{font:inherit;padding:8px 10px;border:2px solid var(--line);border-radius:8px;width:100%;color:var(--ink);background:#fff}
+.kb input[type=checkbox]{width:auto}
+.kb-btn{font:800 .92rem var(--body);background:var(--rose);color:var(--plum);border:0;border-radius:8px;padding:10px 16px;cursor:pointer}
+.kb-btn.dark{background:var(--plum);color:#fff}.kb-btn.light{background:#fff;border:2px solid var(--line)}
+.kb-btn.red{background:#fff;color:#a3243b;border:2px solid #e8c3ca;padding:6px 12px}
+.kb-btn:disabled{opacity:.55;cursor:wait}
+.kb-bar{display:flex;gap:10px;flex-wrap:wrap;align-items:end}.kb-bar>*{flex:1 1 160px}.kb-bar .kb-btn{flex:0 0 auto}
+.kb-hint{font-size:.88rem;color:var(--mute);margin:8px 0}
+.kb-msg{display:none;padding:10px 14px;border-radius:8px;font-weight:700;margin-top:10px}
+.kb-msg.good{display:block;background:#e3f2ea;color:#1f5a3c}.kb-msg.bad{display:block;background:#fbe3e8;color:#7d1a35}
+.kb-warn{background:#fff4de;border:2px solid #f0d49a;color:#6a4a0a;border-radius:10px;padding:10px 14px;margin-bottom:14px;font-weight:600}
+.kb pre{background:#f7f1f3;border-radius:8px;padding:10px;overflow:auto;font-size:.85rem;margin-top:8px}
+.kb-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.kb-stat{background:#fff;border:2px solid var(--line);border-top:5px solid var(--sage);border-radius:12px;padding:12px 14px}
+.kb-stat span{display:block;font-size:.8rem;color:var(--mute);font-weight:700}
+.kb-stat b{font-size:1.2rem}
+.kb-stat.hot{border-top-color:#a3243b;background:#fdf0f2}
+.kb-chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;align-items:center}
+.kb-chips button{background:#fff;border:2px solid var(--line);border-radius:999px;padding:6px 14px;font:700 .84rem var(--body);cursor:pointer;color:var(--plum)}
+.kb-chips button[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
+.kb-chips input[type=date]{width:auto}
+.kb-o{background:#fff;border:2px solid var(--line);border-left:6px solid var(--gold);border-radius:12px;margin-bottom:12px}
+.kb-o.s-new{border-left-color:#a3243b;box-shadow:0 0 0 2px #a3243b22}
+.kb-o.s-done{border-left-color:var(--sage)}.kb-o.s-cancelled{border-left-color:#b9a6b5;opacity:.75}
+.kb-oh{display:flex;gap:10px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.kb-oh small{margin-left:auto;color:var(--mute)}
+.kb-st{background:#f1e6ea;border-radius:999px;padding:1px 10px;font-size:.8rem;font-weight:800}
+.s-new .kb-st{background:#a3243b;color:#fff}
+.kb-ob{padding:10px 14px;display:grid;gap:3px;font-size:.95rem}
+.kb-ob ul{list-style:none;margin:6px 0;border-top:1px dashed var(--line);padding-top:6px}
+.kb-ob li{display:flex;justify-content:space-between;gap:10px}
+.kb-ot{display:flex;justify-content:space-between;font-size:1.05rem}
+.kb-oa{display:flex;gap:8px;flex-wrap:wrap;padding:0 14px 12px}
+.kb-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.kb-col{background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px}
+.kb-col h3{font-family:var(--display);font-size:1.3rem;color:var(--plum);margin-bottom:6px}
+.kb-slot{border-left:4px solid var(--sage);padding:4px 10px;margin-bottom:8px;background:#f7f9f8;border-radius:0 8px 8px 0;font-size:.9rem}
+.kb-slot.s-new{border-left-color:#a3243b;background:#fdf0f2}
+.kb-slot b{display:block}
+.kb-item{border:2px solid var(--line);border-radius:12px;padding:12px;margin-bottom:12px;background:#fff}
+.kb-item.off{background:#f4eef0}
+.kb-g1{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:10px;align-items:end;margin-bottom:10px}
+.kb-g2{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px}
+.kb-chk{display:flex;gap:16px;flex-wrap:wrap}
+.kb-chk label{display:flex;align-items:center;gap:6px;font-weight:600;color:var(--ink);font-size:.9rem}
+
+@media(max-width:960px){.masters{grid-template-columns:repeat(3,1fr)}.gal{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){
+  .hero .wrap,.facts,.cards,.rv-list,.row2,.svc,.strip .wrap{grid-template-columns:1fr}
+  .hero{padding-top:34px}
+  .arch{max-width:230px}
+  .btn.ghost{margin:10px 0 0}
+  header{position:static}
+  html{scroll-padding-top:12px}
+  nav{gap:8px 14px}nav a{font-size:.85rem}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px 18px;padding:0 20px 6px;scrollbar-width:none}.tab{flex:none}
+  .masters{grid-template-columns:1fr 1fr}
+  section{padding:50px 0}
+  .kb-stats{grid-template-columns:1fr 1fr}.kb-g1,.kb-g2{grid-template-columns:1fr}
+  .slots{grid-template-columns:repeat(3,1fr)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.drawer{transition:none}}
+@media print{
+  body>*:not(#tkwrap){display:none!important}
+  #tkwrap{position:static!important;background:none!important;display:block!important;padding:0!important}
+  .tk{box-shadow:none!important;margin:0 auto}
+  .noprint{display:none!important}
+  .kb{display:none!important}
+}
+
+/* ===== ZAMONAVIY QATLAM ===== */
+header{background:rgba(255,249,245,.82);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px)}
+.btn{transition:transform .18s,box-shadow .18s,background .18s;box-shadow:0 6px 18px -8px rgba(58,29,59,.55)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 24px -10px rgba(58,29,59,.6)}
+.btn.light,.btn.ghost{box-shadow:none}
+.hero{position:relative;background:radial-gradient(60% 70% at 85% 10%,#f6d3dd 0,transparent 60%),radial-gradient(50% 60% at 5% 90%,#efe2cf 0,transparent 60%),linear-gradient(180deg,var(--blush),var(--cream))}
+.open-badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 14px 5px 11px;font-weight:800;font-size:.8rem;color:var(--plum);margin-bottom:14px;box-shadow:0 4px 14px -8px rgba(58,29,59,.4)}
+.open-badge i{width:9px;height:9px;border-radius:50%;background:#9aa;display:block}
+.open-badge.on i{background:#2e9e6b;box-shadow:0 0 0 0 #2e9e6b88;animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px #2e9e6b00}100%{box-shadow:0 0 0 0 #2e9e6b00}}
+.fchip{position:absolute;background:rgba(255,255,255,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid #fff;border-radius:16px;padding:10px 16px;box-shadow:0 14px 30px -14px rgba(58,29,59,.45);display:flex;align-items:baseline;gap:8px;animation:float 6s ease-in-out infinite}
+.fchip b{font-family:var(--display);font-size:1.9rem;color:var(--rose-d);line-height:1}
+.fchip span{font-weight:700;font-size:.8rem;color:var(--plum)}
+.fchip.c1{left:-26px;top:70px}.fchip.c2{right:-22px;top:190px;animation-delay:-3s}
+@keyframes float{50%{transform:translateY(-9px)}}
+.how{padding:58px 0 10px}
+.how-g{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.how-c{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;position:relative;box-shadow:0 18px 36px -26px rgba(58,29,59,.4)}
+.how-c em{font:700 2.4rem/1 var(--display);font-style:normal;color:var(--rose);display:block;margin-bottom:6px}
+.how-c h3{font-family:var(--display);font-size:1.45rem;color:var(--plum);margin-bottom:4px}
+.how-c p{color:var(--mute);font-size:.95rem}
+.item,.master,.card,.rv,.facts>div{border-radius:18px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.item:hover,.master:hover,.card:hover{transform:translateY(-3px);box-shadow:0 18px 32px -22px rgba(58,29,59,.5)}
+.faq{display:grid;gap:10px;max-width:780px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:0 18px;transition:border-color .2s}
+.faq details[open]{border-color:var(--rose)}
+.faq summary{cursor:pointer;font-weight:800;color:var(--plum);padding:15px 26px 15px 0;list-style:none;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--rose-d);transition:transform .2s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq p{color:var(--mute);padding:0 0 16px}
+.rvx{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rvx.in{opacity:1;transform:none}
+.totop{position:fixed;left:18px;bottom:22px;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center;text-decoration:none;font-weight:800;color:var(--plum);box-shadow:0 10px 24px -12px rgba(58,29,59,.5);z-index:15}
+.bkbtn{box-shadow:0 14px 30px -10px rgba(181,97,123,.7)}
+@media (max-width:760px){.how-g{grid-template-columns:1fr}.fchip.c1{left:-6px}.fchip.c2{right:-6px}.how{padding-top:40px}}
+@media (prefers-reduced-motion:reduce){.fchip,.open-badge i{animation:none}.rvx{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media print{.totop,.fchip{display:none!important}}
+.faq{margin-top:18px}
+@media (max-width:760px){
+  .nav{flex-wrap:nowrap;padding:8px 16px}
+  nav{gap:10px;flex-wrap:nowrap}
+  nav>a:not(.tel){display:none}
+  nav .tel{font-size:.82rem;white-space:nowrap}
+  .logo{font-size:1.7rem}
+}
+
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ic-soch" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="19" cy="47" r="7"/><circle cx="45" cy="47" r="7"/><path d="M24 41L46 8M40 41L18 8"/></symbol>
+    <symbol id="ic-nail" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="30" width="24" height="26" rx="5"/><rect x="26" y="15" width="12" height="15" rx="2"/><path d="M30 15V8h4v7"/></symbol>
+    <symbol id="ic-face" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M32 8c-10 0-16 8-16 18 0 12 7 22 16 28 9-6 16-16 16-28 0-10-6-18-16-18z"/><path d="M24 28h.1M40 28h.1M25 40c4 4 10 4 14 0"/></symbol>
+    <symbol id="ic-brow" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34c8-12 18-18 26-18s18 6 26 18c-8 12-18 18-26 18S14 46 6 34z"/><circle cx="32" cy="34" r="8"/><path d="M12 12c10-6 30-6 40 0"/></symbol>
+    <symbol id="ic-wax" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M32 8c10 12 16 20 16 28a16 16 0 0 1-32 0c0-8 6-16 16-28z"/><path d="M24 38c0 5 3 8 8 8"/></symbol>
+    <symbol id="ic-barber" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 46L42 14l8 8-32 32z"/><path d="M34 22l8 8M14 50l-4 4"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#top" id="logo">Nafis</a>
+    <nav aria-label="Menu">
+      <a href="#xizmatlar" data-i18n="nav_services"></a>
+      <a href="#ustalar" data-i18n="nav_masters"></a>
+      <a href="#about" data-i18n="nav_about"></a>
+      <a href="#faq" data-i18n="nav_faq"></a>
+      <a href="#fikrlar" data-i18n="nav_reviews"></a>
+      <a href="#aloqa" data-i18n="nav_contact"></a>
+      <a class="tel" id="navtel" href="#"></a>
+      <div class="langs" role="group" aria-label="Til">
+        <button type="button" data-lang="uz">UZ</button>
+        <button type="button" data-lang="ru">RU</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-t">
+      <span class="open-badge" id="open-badge" hidden><i></i><span id="open-txt"></span></span>
+      <p class="eyebrow" data-i18n="hero_eyebrow"></p>
+      <h1 data-i18n="hero_h1"></h1>
+      <p data-i18n="hero_p"></p>
+      <a class="btn" href="#xizmatlar" data-i18n="btn_choose"></a>
+      <a class="btn ghost" href="#ustalar" data-i18n="btn_masters"></a>
+    </div>
+    <div class="arch" role="img" aria-label="Nafis">
+      <svg viewBox="0 0 320 400" aria-hidden="true">
+        <path d="M30 400V160a130 130 0 0 1 260 0v240" fill="none" stroke="#d4829a" stroke-width="2"/>
+        <path d="M60 400V165a100 100 0 0 1 200 0v235" fill="none" stroke="#b8894a" stroke-width="2"/>
+        <path d="M90 400V170a70 70 0 0 1 140 0v230" fill="#f3cfd8"/>
+        <circle cx="160" cy="150" r="34" fill="#fff9f5"/>
+        <path d="M160 184v80M160 214c-24-4-38-18-42-38M160 236c24-4 38-18 42-38M160 258c-18-2-30-12-34-28M160 258c18-2 30-12 34-28" fill="none" stroke="#6f9484" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <span class="arch-note" data-i18n="arch_note"></span>
+      <div class="fchip c1"><b id="hero-n">0</b><span data-i18n="hero_svc"></span></div>
+      <div class="fchip c2"><b id="hero-m">0</b><span data-i18n="hero_mas"></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b data-i18n="s1_h"></b><span data-i18n="s1_p"></span></div>
+    <div><b data-i18n="s2_h"></b><span data-i18n="s2_p"></span></div>
+    <div><b data-i18n="s3_h"></b><span data-i18n="s3_p"></span></div>
+  </div>
+</div>
+
+
+<section class="how" id="qadam">
+  <div class="wrap">
+    <h2 data-i18n="how_title"></h2>
+    <div class="how-g">
+      <div class="how-c"><em>1</em><h3 data-i18n="how1_h"></h3><p data-i18n="how1_p"></p></div>
+      <div class="how-c"><em>2</em><h3 data-i18n="how2_h"></h3><p data-i18n="how2_p"></p></div>
+      <div class="how-c"><em>3</em><h3 data-i18n="how3_h"></h3><p data-i18n="how3_p"></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="xizmatlar">
+  <div class="wrap">
+    <h2 data-i18n="svc_title"></h2>
+    <p class="sub"><strong id="total">0</strong> <span data-i18n="svc_sub"></span></p>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div id="svc-out"></div>
+  </div>
+</section>
+
+<section class="soft" id="ustalar">
+  <div class="wrap">
+    <h2 data-i18n="m_title"></h2>
+    <p class="sub" data-i18n="m_sub"></p>
+    <div class="masters" id="masters"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2 data-i18n="about_title"></h2>
+    <p class="sub" data-i18n="about_p"></p>
+    <div class="facts">
+      <div><h3 data-i18n="f1_h"></h3><p data-i18n="f1_p"></p></div>
+      <div><h3 data-i18n="f2_h"></h3><p data-i18n="f2_p"></p></div>
+      <div><h3 data-i18n="f3_h"></h3><p data-i18n="f3_p"></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="galereya" hidden>
+  <div class="wrap">
+    <h2 data-i18n="gal_title"></h2>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2 data-i18n="faq_title"></h2>
+    <div class="faq">
+      <details><summary data-i18n="q1"></summary><p data-i18n="a1"></p></details>
+      <details><summary data-i18n="q2"></summary><p data-i18n="a2"></p></details>
+      <details><summary data-i18n="q3"></summary><p data-i18n="a3"></p></details>
+      <details><summary data-i18n="q4"></summary><p data-i18n="a4"></p></details>
+      <details><summary data-i18n="q5"></summary><p data-i18n="a5"></p></details>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="fikrlar">
+  <div class="wrap">
+    <h2 data-i18n="rv_title"></h2>
+    <p class="sub" data-i18n="rv_sub"></p>
+    <div class="rv-list" id="rv-list"></div>
+    <form id="rvform" class="rvform">
+      <div class="row2">
+        <label><span data-i18n="f_name"></span><input name="ism" required maxlength="40"></label>
+        <label><span data-i18n="rv_rate"></span>
+          <select name="baho"><option value="5">★★★★★</option><option value="4">★★★★</option><option value="3">★★★</option><option value="2">★★</option><option value="1">★</option></select>
+        </label>
+      </div>
+      <label><span data-i18n="rv_text"></span><textarea name="matn" required maxlength="400"></textarea></label>
+      <button class="btn" type="submit" data-i18n="rv_btn"></button>
+      <div class="msg" id="rvmsg" role="status"></div>
+    </form>
+  </div>
+</section>
+
+<section id="aloqa">
+  <div class="wrap">
+    <h2 data-i18n="contact_title"></h2>
+    <p class="sub" data-i18n="contact_sub"></p>
+    <div class="cards">
+      <div class="card"><h3 data-i18n="phone"></h3><a id="c-tel" href="#"></a><small id="c-social"></small></div>
+      <div class="card"><h3 data-i18n="address"></h3><p id="c-addr"></p></div>
+      <div class="card"><h3 data-i18n="hours"></h3><p id="c-hours"></p><small id="c-closed"></small></div>
+    </div>
+    <div class="mapbox">
+      <iframe id="map" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mapbar">
+        <a class="btn" id="route" target="_blank" rel="noopener" data-i18n="route"></a>
+        <a class="btn light" id="route-y" target="_blank" rel="noopener">Yandex</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span id="f-left"></span>
+    <span><span id="f-right"></span> · <a href="#admin" class="f-adm">Admin</a></span>
+  </div>
+</footer>
+
+<button class="bkbtn" id="bkbtn" type="button"></button>
+<a class="totop" id="totop" href="#top" aria-label="Up" hidden>↑</a>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-hidden="true">
+  <div class="dhead"><h3 id="dtitle"></h3><button id="dclose" type="button" aria-label="X">✕</button></div>
+
+  <div id="bk-box" class="bkbox">
+    <div id="sel-empty" class="empty"></div>
+    <ul id="sel-list"></ul>
+    <div class="dtotal" id="sel-total" hidden><span data-i18n="total"></span><b id="sel-sum"></b></div>
+    <div class="dur" id="sel-dur" hidden></div>
+    <form id="bk-form">
+      <label><span data-i18n="f_master"></span><select id="bk-master"></select></label>
+      <div class="lab"><span data-i18n="f_date"></span><div class="days" id="bk-days"></div></div>
+      <div class="lab"><span data-i18n="f_time"></span><div class="slots" id="bk-slots"></div><p class="hint" id="bk-hint"></p></div>
+      <label><span data-i18n="f_name"></span><input name="ism" required maxlength="60" autocomplete="name"></label>
+      <label><span data-i18n="f_phone"></span><input name="tel" type="tel" required maxlength="20" autocomplete="tel" placeholder="+998 __ ___ __ __"></label>
+      <label><span data-i18n="f_note"></span><input name="izoh" maxlength="150"></label>
+      <button class="btn" type="submit" data-i18n="book_btn"></button>
+      <div class="msg" id="bmsg" role="status"></div>
+    </form>
+  </div>
+
+  <div id="status" hidden>
+    <h4 id="st-title"></h4>
+    <p id="st-text"></p>
+    <ol class="steps" id="st-steps"></ol>
+    <button class="btn" id="st-ticket" type="button" hidden data-i18n="see_ticket"></button>
+    <button class="btn light" id="st-new" type="button" data-i18n="new_booking"></button>
+  </div>
+</aside>
+
+<div class="tkwrap" id="tkwrap" hidden>
+  <div class="tk" role="dialog" aria-label="Ticket">
+    <div class="tk-bar" aria-hidden="true"></div>
+    <div class="tk-in">
+      <div class="tk-head"><b id="tk-name"></b><span id="tk-addr"></span><span id="tk-tel"></span></div>
+      <div class="tk-meta" id="tk-meta"></div>
+      <table id="tk-rows"></table>
+      <div class="tk-total"><span data-i18n="total"></span><b id="tk-sum"></b></div>
+      <p class="tk-ok" data-i18n="tk_thanks"></p>
+      <div class="tk-actions noprint">
+        <button class="btn" id="tk-cal" type="button" data-i18n="tk_cal"></button>
+        <button class="btn light" id="tk-print" type="button" data-i18n="tk_print"></button>
+        <button class="btn light" id="tk-close" type="button" data-i18n="tk_close"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   NAFIS SALONI SOZLAMALARI
+   Telefon, manzil, ish vaqti, bot va boshqalar shu yerda.
+   ============================================================ */
+const SOZLAMA = {
+  NOM: "Nafis",
+  TELEFON: "+998943248308",
+  MANZIL: "Farg'ona viloyati, Uchko'prik tumani",
+  INSTAGRAM: "",   // masalan: "nafis.salon" (bo'sh bo'lsa chiqmaydi)
+  TELEGRAM: "",    // masalan: "nafis_salon"
+
+  /* ---- ISH VAQTI ----
+     dan/gacha: "09:00" ko'rinishida. yopiq: dam olish kunlari (0=Yakshanba, 1=Dushanba ... 6=Shanba).
+     qadam: vaqt tanlash oralig'i (daqiqada). oldindan: necha kun keyingacha yozilish mumkin.
+     minimal: hozirdan necha daqiqa keyingi vaqtga yozilish mumkin (bugun uchun). */
+  ISH: { dan: "09:00", gacha: "20:00", yopiq: [], qadam: 30, oldindan: 14, minimal: 30 },
+
+  /* ---- YOZILISHLAR QAYERGA KELADI ----
+     A) TAVSIYA: server (worker papkasi, ULASH.md). API_URL ga worker manzilini yozing.
+        Server band vaqtlarni tekshiradi, token saytda ko'rinmaydi.
+     B) Sinov uchun: API_URL bo'sh, BOT_TOKEN va CHAT_ID to'ldirilgan. Bu usulda band vaqtlar
+        tekshirilmaydi va token sayt kodida ochiq turadi. Internetga chiqarishdan oldin A ga o'ting.
+     Eslatma: bu yerda salon uchun alohida bot qo'yilgan. Xabarlar boshida "Nafis" yozilgan. */
+  API_URL: "",
+  BOT_TOKEN: "9000448103:AAFrrtQKVyQsTUEG9d93KjpbGZ3lPZ83iqg",
+  CHAT_ID: "8807783366",
+
+  HARITA: { qidiruv: "Uchko'prik tumani, Farg'ona viloyati", lat: "", lng: "" },
+
+  /* Galereya: rasmlar/ papkaga rasm tashlab, nomini yozing: ["zal1.jpg", "ish1.jpg"] */
+  GALEREYA: [],
+
+  /* Haqiqiy mijoz fikrlarini qo'lda qo'shish: [{ism:"Aziza", baho:5, matn:"..."}].
+     Server ulangan bo'lsa, mijozlar saytdan fikr yozadi, siz botda tasdiqlasangiz chiqadi. */
+  FIKRLAR: []
+};
+
+</script>
+<script>
+/* NAFIS XIZMATLARI VA USTALARI. Kabinet orqali tahrirlab, yuklab olingan faylni shu yerga qo'ying. */
+const SERVICES = [
+ {"id":"soch","n":{"uz": "Soch", "ru": "Волосы", "en": "Hair"},"items":[
+  {"id": "s1", "n": {"uz": "Ayollar soch kesish", "ru": "Женская стрижка", "en": "Women's haircut"}, "min": 60, "p": 80000, "pop": 1},
+  {"id": "s2", "n": {"uz": "Soch yuvish va fen", "ru": "Мытьё и укладка феном", "en": "Wash & blow-dry"}, "min": 45, "p": 50000},
+  {"id": "s3", "n": {"uz": "Soch turmaklash", "ru": "Укладка волос", "en": "Hair styling"}, "min": 60, "p": 120000},
+  {"id": "s4", "n": {"uz": "Kechki turmak", "ru": "Вечерняя причёска", "en": "Evening updo"}, "min": 90, "p": 250000},
+  {"id": "s5", "n": {"uz": "Ildiz bo'yash", "ru": "Окрашивание корней", "en": "Root colouring"}, "min": 120, "p": 250000},
+  {"id": "s6", "n": {"uz": "To'liq bo'yash", "ru": "Окрашивание в один тон", "en": "Full colour"}, "min": 180, "p": 350000, "pop": 1},
+  {"id": "s7", "n": {"uz": "Balayazh / ombre", "ru": "Балаяж / омбре", "en": "Balayage / ombre"}, "min": 240, "p": 600000, "pop": 1},
+  {"id": "s8", "n": {"uz": "Keratin tekislash", "ru": "Кератиновое выпрямление", "en": "Keratin treatment"}, "min": 180, "p": 500000},
+  {"id": "s9", "n": {"uz": "Soch davolash (maska)", "ru": "Лечение волос (маска)", "en": "Hair treatment (mask)"}, "min": 45, "p": 100000}
+ ]},
+ {"id":"nail","n":{"uz": "Manikyur va pedikyur", "ru": "Маникюр и педикюр", "en": "Manicure & pedicure"},"items":[
+  {"id": "s10", "n": {"uz": "Klassik manikyur", "ru": "Классический маникюр", "en": "Classic manicure"}, "min": 45, "p": 40000},
+  {"id": "s11", "n": {"uz": "Gel-lak bilan manikyur", "ru": "Маникюр с гель-лаком", "en": "Gel polish manicure"}, "min": 90, "p": 90000, "pop": 1},
+  {"id": "s12", "n": {"uz": "Gel-lakni olib tashlash", "ru": "Снятие гель-лака", "en": "Gel polish removal"}, "min": 30, "p": 30000},
+  {"id": "s13", "n": {"uz": "Tirnoq uzaytirish", "ru": "Наращивание ногтей", "en": "Nail extensions"}, "min": 150, "p": 200000},
+  {"id": "s14", "n": {"uz": "Pedikyur", "ru": "Педикюр", "en": "Pedicure"}, "min": 60, "p": 80000},
+  {"id": "s15", "n": {"uz": "Pedikyur gel-lak bilan", "ru": "Педикюр с гель-лаком", "en": "Pedicure with gel polish"}, "min": 90, "p": 120000, "pop": 1},
+  {"id": "s16", "n": {"uz": "Parafin vannasi", "ru": "Парафиновая ванночка", "en": "Paraffin treatment"}, "min": 30, "p": 40000}
+ ]},
+ {"id":"face","n":{"uz": "Yuz parvarishi", "ru": "Уход за лицом", "en": "Facial care"},"items":[
+  {"id": "s17", "n": {"uz": "Yuz tozalash", "ru": "Чистка лица", "en": "Facial cleansing"}, "min": 60, "p": 120000, "pop": 1},
+  {"id": "s18", "n": {"uz": "Pilling", "ru": "Пилинг", "en": "Peeling"}, "min": 45, "p": 100000},
+  {"id": "s19", "n": {"uz": "Yuz massaji", "ru": "Массаж лица", "en": "Facial massage"}, "min": 30, "p": 80000},
+  {"id": "s20", "n": {"uz": "Alginat niqob", "ru": "Альгинатная маска", "en": "Alginate mask"}, "min": 40, "p": 90000},
+  {"id": "s21", "n": {"uz": "Kompleks parvarish", "ru": "Комплексный уход", "en": "Complete facial"}, "min": 90, "p": 220000}
+ ]},
+ {"id":"brow","n":{"uz": "Qosh va kiprik", "ru": "Брови и ресницы", "en": "Brows & lashes"},"items":[
+  {"id": "s22", "n": {"uz": "Qosh shakli berish", "ru": "Коррекция бровей", "en": "Brow shaping"}, "min": 30, "p": 40000},
+  {"id": "s23", "n": {"uz": "Qosh bo'yash", "ru": "Окрашивание бровей", "en": "Brow tinting"}, "min": 30, "p": 35000},
+  {"id": "s24", "n": {"uz": "Qosh laminatsiyasi", "ru": "Ламинирование бровей", "en": "Brow lamination"}, "min": 60, "p": 130000, "pop": 1},
+  {"id": "s25", "n": {"uz": "Kiprik laminatsiyasi", "ru": "Ламинирование ресниц", "en": "Lash lift"}, "min": 75, "p": 160000},
+  {"id": "s26", "n": {"uz": "Kiprik uzaytirish (klassik)", "ru": "Наращивание ресниц (классика)", "en": "Classic lash extensions"}, "min": 120, "p": 200000}
+ ]},
+ {"id":"wax","n":{"uz": "Epilyatsiya", "ru": "Эпиляция", "en": "Hair removal"},"items":[
+  {"id": "s27", "n": {"uz": "Lab usti (shugaring)", "ru": "Над губой (шугаринг)", "en": "Upper lip (sugaring)"}, "min": 15, "p": 25000},
+  {"id": "s28", "n": {"uz": "Qo'ltiq osti", "ru": "Подмышки", "en": "Underarms"}, "min": 20, "p": 40000},
+  {"id": "s29", "n": {"uz": "Bikini", "ru": "Бикини", "en": "Bikini line"}, "min": 40, "p": 100000},
+  {"id": "s30", "n": {"uz": "Oyoqlar (to'liq)", "ru": "Ноги (полностью)", "en": "Full legs"}, "min": 60, "p": 150000}
+ ]},
+ {"id":"barber","n":{"uz": "Erkaklar sartaroshxonasi", "ru": "Барбершоп", "en": "Barbershop"},"items":[
+  {"id": "s31", "n": {"uz": "Erkaklar soch kesish", "ru": "Мужская стрижка", "en": "Men's haircut"}, "min": 45, "p": 60000, "pop": 1},
+  {"id": "s32", "n": {"uz": "Soqol tuzatish", "ru": "Оформление бороды", "en": "Beard trim"}, "min": 30, "p": 40000},
+  {"id": "s33", "n": {"uz": "Soch + soqol", "ru": "Стрижка + борода", "en": "Haircut + beard"}, "min": 75, "p": 90000, "pop": 1},
+  {"id": "s34", "n": {"uz": "Issiq sochiq bilan qirish", "ru": "Бритьё горячим полотенцем", "en": "Hot towel shave"}, "min": 40, "p": 60000},
+  {"id": "s35", "n": {"uz": "Bolalar soch kesish", "ru": "Детская стрижка", "en": "Kids' haircut"}, "min": 30, "p": 40000}
+ ]}
+];
+const MASTERS = [
+ {"id": "m1", "n": "Madina", "r": {"uz": "Stilist-kolorist", "ru": "Стилист-колорист", "en": "Stylist & colourist"}, "cats": ["soch"]},
+ {"id": "m2", "n": "Dilnoza", "r": {"uz": "Manikyur va pedikyur ustasi", "ru": "Мастер маникюра и педикюра", "en": "Nail technician"}, "cats": ["nail"]},
+ {"id": "m3", "n": "Shahlo", "r": {"uz": "Kosmetolog", "ru": "Косметолог", "en": "Cosmetologist"}, "cats": ["face", "wax"]},
+ {"id": "m4", "n": "Aziza", "r": {"uz": "Qosh va kiprik ustasi", "ru": "Бровист и лэшмейкер", "en": "Brow & lash artist"}, "cats": ["brow"]},
+ {"id": "m5", "n": "Jasur", "r": {"uz": "Barber", "ru": "Барбер", "en": "Barber"}, "cats": ["barber"]}
+];
+
+</script>
+<script>
+(function () {
+'use strict';
+const C = SOZLAMA;
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (_) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (_) {} },
+  del(k) { try { localStorage.removeItem(k); } catch (_) {} }
+};
+const API = (C.API_URL || '').replace(/\/+$/, '');
+const DIRECT = !API;
+
+/* ============ TARJIMALAR ============ */
+const T = {
+uz: {
+  nav_services:"Xizmatlar", nav_masters:"Ustalar", nav_about:"Biz haqimizda", nav_reviews:"Fikrlar", nav_contact:"Aloqa",
+  hero_eyebrow:"Go'zallik saloni va sartaroshxona", hero_h1:"O'zingizga vaqt ajrating, qolganini bizga qoldiring",
+  hero_p:"Soch, manikyur, yuz parvarishi, qosh va kiprik, erkaklar sartaroshxonasi. Xizmat va usta tanlang, qulay vaqtga onlayn yoziling.",
+  btn_choose:"Xizmat tanlash", btn_masters:"Ustalarimiz", arch_note:"Onlayn yozilish",
+  s1_h:"Navbatsiz", s1_p:"Aniq vaqtga yozilasiz, kutib o'tirmaysiz.", s2_h:"Tajribali ustalar", s2_p:"Har bir yo'nalishga alohida mutaxassis.", s3_h:"Toza va xavfsiz", s3_p:"Asboblar har mijozdan keyin tozalanadi.",
+  svc_title:"Xizmatlar va narxlar", svc_sub:"xizmat. Kerakligini tanlang, bir nechtasini birga yozdirish mumkin.", cat_all:"Barchasi",
+  pick:"+ Tanlash", picked:"✓ Tanlandi", off:"Hozir yo'q", pop:"Mashhur", cur:"so'm", h:"soat", min:"daq",
+  m_title:"Ustalarimiz", m_sub:"Ustani tanlang yoki \"har qanday usta\" ni belgilang, bo'sh vaqtni o'zimiz topamiz.", m_book:"Yozilish", m_off:"Dam olmoqda",
+  about_title:"Biz haqimizda", about_p:"Nafis kichik oilaviy salon. Biz tez emas, puxta ishlaymiz va har bir mijozga alohida e'tibor beramiz.",
+  f1_h:"Sifatli materiallar", f1_p:"Tanilgan brendlarning bo'yoq, gel-lak va parvarish vositalaridan foydalanamiz.",
+  f2_h:"Qulay vaqt", f2_p:"Ish kuni ertalabdan kechgacha. Vaqtingizni sayt orqali o'zingiz tanlaysiz.", f3_h:"Halol narx", f3_p:"Narx oldindan ma'lum, ish tugagach qo'shimcha to'lov so'ralmaydi.",
+  gal_title:"Ishlarimiz",
+  rv_title:"Mijozlar fikri", rv_sub:"Bizda bo'ldingizmi? Fikringizni yozing, salon tasdiqlagach saytda chiqadi.", rv_rate:"Baho", rv_text:"Fikringiz", rv_btn:"Fikrni yuborish", rv_ok:"Rahmat! Fikringiz yuborildi.",
+  contact_title:"Aloqa", contact_sub:"Savolingiz bo'lsa, qo'ng'iroq qiling yoki bevosita yoziling.", phone:"Telefon", address:"Manzil", hours:"Ish vaqti", closed:"Dam olish kuni:", route:"Yo'l ko'rsat",
+  bk_btn:"Yozilish", bk_title:"Yozilish", sel_empty:"Hali xizmat tanlanmagan. Pastga tushib, kerakli xizmatni \"Tanlash\" bilan belgilang.", total:"Jami", dur:"Davomiyligi:",
+  f_master:"Usta", f_date:"Sana", f_time:"Vaqt", f_name:"Ismingiz", f_phone:"Telefon raqamingiz", f_note:"Izoh (ixtiyoriy)", any_master:"Har qanday usta (bo'sh vaqt bo'yicha)",
+  book_btn:"Yozilish", sending:"Yuborilmoqda...", no_slots:"Bu kunga bo'sh vaqt qolmadi. Boshqa kunni tanlang.", loading:"Bo'sh vaqtlar yuklanmoqda...", closed_day:"Yopiq",
+  v_services:"Avval kamida bitta xizmat tanlang.", v_time:"Sana va vaqtni tanlang.", v_phone:"Telefon raqamni to'liq yozing.", v_master:"Tanlangan xizmatlarni bitta usta bajara olmaydi. Ularni alohida yozdiring.",
+  taken:"Bu vaqt hozirgina band bo'ldi. Boshqa vaqtni tanlang.", confirm_new:"Joriy yozilish kuzatuvi to'xtaydi. Yangi yozilishni boshlaysizmi?",
+  st_new:"Yuborildi", st_accepted:"Tasdiqlandi", st_done:"Bajarildi", st_cancelled:"Bekor qilindi", st_timeout:"Javob kelmadi",
+  stx_new:"Salon tasdiqlashini kutyapmiz. Sahifani yopmang, holat shu yerda yangilanadi.", stx_accepted:"Yozilishingiz tasdiqlandi. Talon tayyor, vaqtida kutib qolamiz.",
+  stx_done:"Rahmat, yana kutib qolamiz!", stx_cancelled:"Afsuski, salon bu vaqtni tasdiqlay olmadi. Boshqa vaqt tanlang yoki qo'ng'iroq qiling:", stx_timeout:"Salon hali javob bermadi. Qo'ng'iroq qilib so'rang:",
+  no:"Yozilish №", see_ticket:"Talonni ko'rish", new_booking:"Yangi yozilish",
+  tk_no:"Talon №", tk_date:"Sana", tk_time:"Vaqt", tk_master:"Usta", tk_cust:"Mijoz", tk_phone:"Telefon", tk_status:"Holat", tk_any:"Belgilanadi", tk_thanks:"Vaqtida kelishingizni so'raymiz.", tk_cal:"Kalendarga qo'shish", tk_print:"Chop etish", tk_close:"Yopish",
+  wd:["Yak","Dush","Sesh","Chor","Pay","Jum","Shan"],
+  e_config:"Bot hali ulanmagan: sozlamalar.js da BOT_TOKEN va CHAT_ID (yoki API_URL) ni to'ldiring.", e_token:"Bot tokeni noto'g'ri. BOT_TOKEN ni tekshiring.",
+  e_chat:"Bot sizga yoza olmayapti. Telegramda botga kirib Start bosing va CHAT_ID ni tekshiring.", e_net:"Ulanib bo'lmadi. Internetni tekshiring (VPN yoki filtrni o'chirib ko'ring).", e_other:"Yuborib bo'lmadi: "
+},
+ru: {
+  nav_services:"Услуги", nav_masters:"Мастера", nav_about:"О нас", nav_reviews:"Отзывы", nav_contact:"Контакты",
+  hero_eyebrow:"Салон красоты и барбершоп", hero_h1:"Подарите себе время, остальное оставьте нам",
+  hero_p:"Волосы, маникюр, уход за лицом, брови и ресницы, мужская стрижка. Выберите услугу и мастера, запишитесь онлайн на удобное время.",
+  btn_choose:"Выбрать услугу", btn_masters:"Наши мастера", arch_note:"Онлайн-запись",
+  s1_h:"Без очередей", s1_p:"Вы записаны на точное время.", s2_h:"Опытные мастера", s2_p:"Отдельный специалист по каждому направлению.", s3_h:"Чисто и безопасно", s3_p:"Инструменты обрабатываются после каждого клиента.",
+  svc_title:"Услуги и цены", svc_sub:"услуг. Отметьте нужные, можно записаться сразу на несколько.", cat_all:"Все",
+  pick:"+ Выбрать", picked:"✓ Выбрано", off:"Недоступно", pop:"Хит", cur:"сум", h:"ч", min:"мин",
+  m_title:"Наши мастера", m_sub:"Выберите мастера или «любой мастер», свободное время подберём сами.", m_book:"Записаться", m_off:"Выходной",
+  about_title:"О нас", about_p:"Nafis — небольшой семейный салон. Мы работаем не быстро, а тщательно, и уделяем внимание каждому клиенту.",
+  f1_h:"Качественные материалы", f1_p:"Работаем с известными брендами красок, гель-лаков и средств для ухода.",
+  f2_h:"Удобное время", f2_p:"С утра до вечера. Время вы выбираете сами на сайте.", f3_h:"Честная цена", f3_p:"Цена известна заранее, доплат после работы нет.",
+  gal_title:"Наши работы",
+  rv_title:"Отзывы клиентов", rv_sub:"Были у нас? Напишите отзыв, он появится на сайте после проверки.", rv_rate:"Оценка", rv_text:"Ваш отзыв", rv_btn:"Отправить отзыв", rv_ok:"Спасибо! Отзыв отправлен.",
+  contact_title:"Контакты", contact_sub:"Есть вопросы? Звоните или записывайтесь сразу.", phone:"Телефон", address:"Адрес", hours:"Часы работы", closed:"Выходной:", route:"Проложить маршрут",
+  bk_btn:"Записаться", bk_title:"Запись", sel_empty:"Услуги не выбраны. Спуститесь ниже и отметьте нужную кнопкой «Выбрать».", total:"Итого", dur:"Длительность:",
+  f_master:"Мастер", f_date:"Дата", f_time:"Время", f_name:"Ваше имя", f_phone:"Ваш телефон", f_note:"Комментарий (необязательно)", any_master:"Любой мастер (по свободному времени)",
+  book_btn:"Записаться", sending:"Отправляем...", no_slots:"На этот день нет свободного времени. Выберите другой.", loading:"Загружаем свободное время...", closed_day:"Выходной",
+  v_services:"Сначала выберите хотя бы одну услугу.", v_time:"Выберите дату и время.", v_phone:"Введите телефон полностью.", v_master:"Выбранные услуги не выполняет один мастер. Запишитесь на них отдельно.",
+  taken:"Это время только что заняли. Выберите другое.", confirm_new:"Отслеживание текущей записи прекратится. Начать новую?",
+  st_new:"Отправлена", st_accepted:"Подтверждена", st_done:"Выполнена", st_cancelled:"Отменена", st_timeout:"Нет ответа",
+  stx_new:"Ждём подтверждения салона. Не закрывайте страницу, статус обновится здесь.", stx_accepted:"Запись подтверждена. Талон готов, ждём вас вовремя.",
+  stx_done:"Спасибо, ждём вас снова!", stx_cancelled:"К сожалению, салон не смог подтвердить это время. Выберите другое или позвоните:", stx_timeout:"Салон пока не ответил. Позвоните и уточните:",
+  no:"Запись №", see_ticket:"Показать талон", new_booking:"Новая запись",
+  tk_no:"Талон №", tk_date:"Дата", tk_time:"Время", tk_master:"Мастер", tk_cust:"Клиент", tk_phone:"Телефон", tk_status:"Статус", tk_any:"Будет назначен", tk_thanks:"Просим прийти вовремя.", tk_cal:"Добавить в календарь", tk_print:"Печать", tk_close:"Закрыть",
+  wd:["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],
+  e_config:"Бот ещё не подключён: заполните BOT_TOKEN и CHAT_ID (или API_URL) в sozlamalar.js.", e_token:"Неверный токен бота. Проверьте BOT_TOKEN.",
+  e_chat:"Бот не может вам писать. Откройте бота в Telegram, нажмите Start и проверьте CHAT_ID.", e_net:"Нет соединения. Проверьте интернет (отключите VPN или фильтр).", e_other:"Не удалось отправить: "
+},
+en: {
+  nav_services:"Services", nav_masters:"Our team", nav_about:"About", nav_reviews:"Reviews", nav_contact:"Contact",
+  hero_eyebrow:"Beauty salon & barbershop", hero_h1:"Take time for yourself, leave the rest to us",
+  hero_p:"Hair, manicure, facials, brows and lashes, men's barbering. Pick a service and a specialist, then book online for a time that suits you.",
+  btn_choose:"Choose a service", btn_masters:"Our team", arch_note:"Online booking",
+  s1_h:"No waiting", s1_p:"You are booked for an exact time.", s2_h:"Experienced team", s2_p:"A dedicated specialist for every service.", s3_h:"Clean and safe", s3_p:"Tools are sanitised after every client.",
+  svc_title:"Services & prices", svc_sub:"services. Pick what you need, you can book several at once.", cat_all:"All",
+  pick:"+ Select", picked:"✓ Selected", off:"Unavailable", pop:"Popular", cur:"UZS", h:"h", min:"min",
+  m_title:"Our team", m_sub:"Choose a specialist or \"any\", and we will find a free slot for you.", m_book:"Book", m_off:"Day off",
+  about_title:"About us", about_p:"Nafis is a small family salon. We work carefully rather than fast and give every client personal attention.",
+  f1_h:"Quality products", f1_p:"We use well-known brands of colour, gel polish and care products.",
+  f2_h:"Convenient hours", f2_p:"Open from morning till evening. You pick your time on the site.", f3_h:"Fair prices", f3_p:"The price is known upfront, no surprise charges afterwards.",
+  gal_title:"Our work",
+  rv_title:"Client reviews", rv_sub:"Visited us? Write a review, it appears here once the salon approves it.", rv_rate:"Rating", rv_text:"Your review", rv_btn:"Send review", rv_ok:"Thank you! Your review was sent.",
+  contact_title:"Contact", contact_sub:"Questions? Call us or book right away.", phone:"Phone", address:"Address", hours:"Opening hours", closed:"Closed on:", route:"Get directions",
+  bk_btn:"Book now", bk_title:"Booking", sel_empty:"No services selected yet. Scroll down and press \"Select\" on what you need.", total:"Total", dur:"Duration:",
+  f_master:"Specialist", f_date:"Date", f_time:"Time", f_name:"Your name", f_phone:"Your phone", f_note:"Note (optional)", any_master:"Any specialist (by availability)",
+  book_btn:"Book", sending:"Sending...", no_slots:"No free times left on this day. Pick another one.", loading:"Loading free times...", closed_day:"Closed",
+  v_services:"Select at least one service first.", v_time:"Choose a date and time.", v_phone:"Enter the full phone number.", v_master:"No single specialist does all the selected services. Please book them separately.",
+  taken:"That time was just taken. Please pick another.", confirm_new:"Tracking of the current booking will stop. Start a new one?",
+  st_new:"Sent", st_accepted:"Confirmed", st_done:"Completed", st_cancelled:"Cancelled", st_timeout:"No reply",
+  stx_new:"Waiting for the salon to confirm. Keep this page open, the status updates here.", stx_accepted:"Your booking is confirmed. Your ticket is ready, see you soon.",
+  stx_done:"Thank you, see you again!", stx_cancelled:"Sorry, the salon could not confirm this time. Pick another or call:", stx_timeout:"The salon has not replied yet. Please call:",
+  no:"Booking #", see_ticket:"View ticket", new_booking:"New booking",
+  tk_no:"Ticket #", tk_date:"Date", tk_time:"Time", tk_master:"Specialist", tk_cust:"Client", tk_phone:"Phone", tk_status:"Status", tk_any:"To be assigned", tk_thanks:"Please arrive on time.", tk_cal:"Add to calendar", tk_print:"Print", tk_close:"Close",
+  wd:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
+  e_config:"The bot is not connected yet: fill in BOT_TOKEN and CHAT_ID (or API_URL) in sozlamalar.js.", e_token:"Invalid bot token. Check BOT_TOKEN.",
+  e_chat:"The bot cannot message you. Open the bot in Telegram, press Start and check CHAT_ID.", e_net:"Could not connect. Check your internet (turn off VPN or filters).", e_other:"Could not send: "
+}};
+
+const X = {
+uz:{nav_faq:"Savollar",hero_svc:"xizmat",hero_mas:"usta",open_on:"Hozir ochiq, %s gacha",open_off:"Hozir yopiq. Ochilish: %s",open_off_today:"Hozir yopiq",
+ how_title:"Qanday yozilish",how1_h:"Xizmat tanlang",how1_p:"Narxlar ro'yxatidan keraklisini belgilang, jami narx va vaqt darrov chiqadi.",how2_h:"Usta va vaqt",how2_p:"Ustani va bo'sh vaqtni o'zingiz tanlaysiz, band vaqtlar ko'rinmaydi.",how3_h:"Talon oling",how3_p:"Salon tasdiqlagach talon chiqadi, uni kalendarga qo'shish mumkin.",
+ faq_title:"Ko'p so'raladigan savollar",
+ q1:"Oldindan to'lov kerakmi?",a1:"Yo'q, to'lov salonda xizmat tugagach qilinadi.",
+ q2:"Yozilishni bekor qilsam bo'ladimi?",a2:"Ha, iltimos, kamida 2 soat oldin telefon orqali xabar bering, vaqtni boshqa mijozga berish uchun.",
+ q3:"Kechiksam nima bo'ladi?",a3:"15 daqiqagacha kutamiz. Undan ko'p kechiksangiz, xizmatni qisqartirish yoki boshqa vaqtga ko'chirish kerak bo'lishi mumkin.",
+ q4:"Bir necha xizmatni birga yozdirsam bo'ladimi?",a4:"Ha, xizmatlarni belgilang, sayt umumiy vaqtni hisoblab, mos vaqtni ko'rsatadi. Agar ularni bitta usta bajara olmasa, alohida yozdirasiz.",
+ q5:"Narx aniqmi?",a5:"Saytdagi narx boshlang'ich. Soch uzunligi yoki murakkabligiga qarab usta oldindan aytadi."},
+ru:{nav_faq:"Вопросы",hero_svc:"услуг",hero_mas:"мастеров",open_on:"Сейчас открыто, до %s",open_off:"Сейчас закрыто. Откроемся: %s",open_off_today:"Сейчас закрыто",
+ how_title:"Как записаться",how1_h:"Выберите услугу",how1_p:"Отметьте нужное в прайсе, итоговая цена и время появятся сразу.",how2_h:"Мастер и время",how2_p:"Мастера и свободное время вы выбираете сами, занятые слоты не показываются.",how3_h:"Получите талон",how3_p:"После подтверждения салоном появится талон, его можно добавить в календарь.",
+ faq_title:"Частые вопросы",
+ q1:"Нужна ли предоплата?",a1:"Нет, оплата в салоне после услуги.",
+ q2:"Можно ли отменить запись?",a2:"Да, пожалуйста, предупредите по телефону минимум за 2 часа, чтобы мы предложили время другому клиенту.",
+ q3:"Что если я опоздаю?",a3:"Подождём до 15 минут. При большем опоздании услугу придётся сократить или перенести.",
+ q4:"Можно записаться на несколько услуг сразу?",a4:"Да, отметьте услуги, сайт посчитает общее время и покажет подходящее. Если их не выполняет один мастер, запишитесь отдельно.",
+ q5:"Цена окончательная?",a5:"Цена на сайте стартовая. Мастер заранее уточнит её в зависимости от длины волос или сложности."},
+en:{nav_faq:"FAQ",hero_svc:"services",hero_mas:"specialists",open_on:"Open now, until %s",open_off:"Closed now. Opens: %s",open_off_today:"Closed now",
+ how_title:"How to book",how1_h:"Pick services",how1_p:"Select what you need from the price list, total price and time appear instantly.",how2_h:"Specialist and time",how2_p:"Choose your specialist and a free slot, taken times are not shown.",how3_h:"Get your ticket",how3_p:"Once the salon confirms, your ticket appears and can be added to your calendar.",
+ faq_title:"Frequently asked questions",
+ q1:"Is a prepayment required?",a1:"No, you pay at the salon after the service.",
+ q2:"Can I cancel a booking?",a2:"Yes, please call at least 2 hours ahead so we can offer the time to someone else.",
+ q3:"What if I am late?",a3:"We wait up to 15 minutes. If you are later, the service may need to be shortened or moved.",
+ q4:"Can I book several services at once?",a4:"Yes, select them and the site calculates the total time and shows matching slots. If one specialist cannot do them all, book separately.",
+ q5:"Is the price final?",a5:"The listed price is a starting price. The specialist confirms it in advance depending on hair length or complexity."}
+};
+Object.keys(X).forEach(l => Object.assign(T[l], X[l]));
+let lang = store.get('nf_lang', null);
+if (!T[lang]) lang = ((navigator.language || '').slice(0, 2) === 'ru') ? 'ru' : 'uz';
+const t = k => (T[lang][k] !== undefined ? T[lang][k] : (T.uz[k] !== undefined ? T.uz[k] : k));
+const loc = o => (o && (o[lang] || o.uz)) || '';
+const fmtN = n => Math.round(n).toLocaleString('ru-RU').replace(/ /g, ' ');
+const fmt = n => fmtN(n) + ' ' + t('cur');
+const fmtU = n => fmtN(n) + " so'm";
+const telShow = p => p.replace(/^\+998(\d{2})(\d{3})(\d{2})(\d{2})$/, '+998 $1 $2 $3 $4');
+const hm = m => String(Math.floor(m / 60)).padStart(2, '0') + ':' + String(m % 60).padStart(2, '0');
+const durTxt = m => (m >= 60 ? Math.floor(m / 60) + ' ' + t('h') + ' ' : '') + (m % 60 ? (m % 60) + ' ' + t('min') : '').trim();
+const toMin = s => { const [a, b] = String(s).split(':'); return (+a || 0) * 60 + (+b || 0); };
+const tashNow = () => { const d = new Date(Date.now() + 5 * 3600e3); return { date: d.toISOString().slice(0, 10), min: d.getUTCHours() * 60 + d.getUTCMinutes() }; };
+const wdOf = iso => new Date(iso + 'T00:00:00Z').getUTCDay();
+const addDays = (iso, n) => new Date(new Date(iso + 'T00:00:00Z').getTime() + n * 864e5).toISOString().slice(0, 10);
+const dShow = iso => iso.split('-').reverse().join('.') + ' (' + t('wd')[wdOf(iso)] + ')';
+
+/* ============ MA'LUMOT ============ */
+let SVC = (typeof SERVICES !== 'undefined') ? SERVICES : [], MAS = (typeof MASTERS !== 'undefined') ? MASTERS : [];
+let H = { dan: toMin(C.ISH.dan), gacha: toMin(C.ISH.gacha), yopiq: (C.ISH.yopiq || []).slice() };
+let svcById = {}, catOf = {};
+function indexData() {
+  svcById = {}; catOf = {};
+  SVC.forEach(c => c.items.forEach(i => { svcById[i.id] = i; catOf[i.id] = c.id; }));
+  sel = sel.filter(id => svcById[id] && !svcById[id].off);
+}
+let sel = store.get('nf_sel', []);
+let cat = 'all', master = 'any', date = '', start = null;
+const busyCache = {};
+const total = () => sel.reduce((s, id) => s + svcById[id].p, 0);
+const totalMin = () => sel.reduce((s, id) => s + svcById[id].min, 0);
+const selCats = () => [...new Set(sel.map(id => catOf[id]))];
+const eligible = () => MAS.filter(m => !m.off && (!m.cats || !m.cats.length || selCats().every(c => m.cats.includes(c))));
+
+/* ============ TELEGRAM / SERVER ============ */
+async function tg(method, params) {
+  if (!C.BOT_TOKEN || !C.CHAT_ID || /BU_YERGA/.test(C.BOT_TOKEN + C.CHAT_ID)) throw new Error('config');
+  const res = await fetch('https://api.telegram.org/bot' + C.BOT_TOKEN + '/' + method, { method: 'POST', body: new URLSearchParams(params) });
+  const j = await res.json().catch(() => ({}));
+  if (!res.ok || !j.ok) throw new Error(j.description || ('HTTP ' + res.status));
+  return j.result;
+}
+async function api(path, body) {
+  const opt = body === undefined ? {} : { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) };
+  const res = await fetch(API + path, opt);
+  const j = await res.json().catch(() => ({}));
+  if (!res.ok) { const e = new Error(j.error || ('HTTP ' + res.status)); e.status = res.status; throw e; }
+  return j;
+}
+function explain(err) {
+  const m = (err && err.message) || '';
+  if (m === 'config') return t('e_config');
+  if (/chat not found|initiate|blocked|deactivated|forbidden/i.test(m)) return t('e_chat');
+  if (/unauthorized|token/i.test(m)) return t('e_token');
+  if (/failed to fetch|networkerror|load failed/i.test(m)) return t('e_net');
+  return t('e_other') + m;
+}
+const esc2 = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const STATUS_LINE = { new: '🆕 YANGI', accepted: '✅ TASDIQLANDI', done: '🏁 BAJARILDI', cancelled: '❌ BEKOR QILINDI' };
+const ACT = { ok: { from: ['new'], to: 'accepted' }, no: { from: ['new', 'accepted'], to: 'cancelled' }, done: { from: ['accepted'], to: 'done' } };
+const UZ_WD = ['Yakshanba', 'Dushanba', 'Seshanba', 'Chorshanba', 'Payshanba', 'Juma', 'Shanba'];
+function bookText(b, status) {
+  const lines = b.items.map((x, i) => `${i + 1}. ${esc2(x.n)} (${x.min} daq) = ${fmtU(x.p)}`);
+  return [`💇 <b>${esc2(C.NOM)}: yozilish № ${b.id}</b>`, '', '👤 ' + esc2(b.ism), '📞 ' + esc2(b.tel),
+    '👩‍🎨 Usta: ' + esc2(b.mn || 'Har qanday (belgilanmagan)'), `🗓 ${b.date} (${UZ_WD[wdOf(b.date)]}) ${hm(b.start)}–${hm(b.start + b.dur)}`,
+    '', ...lines, '', `⏱ ${b.dur} daqiqa`, '💰 <b>Jami: ' + fmtU(b.total) + '</b>', b.izoh ? '💬 ' + esc2(b.izoh) : null, '🕒 ' + b.time, '', '<b>' + STATUS_LINE[status] + '</b>'
+  ].filter(x => x !== null).join('\n');
+}
+function keyboard(status, b) {
+  const k = (tx, a) => ({ text: tx, callback_data: a + ':' + b.id });
+  if (status === 'new') return [[k('✅ Tasdiqlash', 'ok'), k('❌ Bekor qilish', 'no')]];
+  if (status === 'accepted') return [[k('🏁 Bajarildi', 'done'), k('❌ Bekor qilish', 'no')]];
+  return [];
+}
+
+/* ============ XIZMATLAR CHIZISH ============ */
+function renderTabs() {
+  const tabs = [['all', t('cat_all'), null]].concat(SVC.map(c => [c.id, loc(c.n), c.id]));
+  $('tabs').innerHTML = tabs.map(([id, n, ic]) =>
+    `<button class="tab" type="button" role="tab" data-cat="${esc(id)}" aria-selected="${id === cat}">${ic ? `<svg aria-hidden="true"><use href="#ic-${esc(ic)}"/></svg>` : ''}${esc(n)}</button>`).join('');
+}
+function itemHTML(i) {
+  const on = sel.includes(i.id);
+  return `<div class="item${on ? ' on' : ''}${i.off ? ' off' : ''}"><div><h3>${esc(loc(i.n))}${i.pop ? `<em class="pop">${esc(t('pop'))}</em>` : ''}</h3><span class="meta">${esc(durTxt(i.min))}</span></div>
+    <div class="right"><b>${fmt(i.p)}</b><button class="pick" type="button" data-id="${esc(i.id)}"${i.off ? ' disabled' : ''}>${esc(i.off ? t('off') : on ? t('picked') : t('pick'))}</button></div></div>`;
+}
+function renderServices() {
+  $('total').textContent = SVC.reduce((a, c) => a + c.items.length, 0);
+  const list = SVC.filter(c => cat === 'all' || c.id === cat);
+  $('svc-out').innerHTML = list.map(c =>
+    (cat === 'all' ? `<h3 class="grp"><svg aria-hidden="true"><use href="#ic-${esc(c.id)}"/></svg>${esc(loc(c.n))}</h3>` : '') +
+    `<div class="svc">${c.items.map(itemHTML).join('')}</div>`).join('');
+}
+function renderMasters() {
+  $('masters').innerHTML = MAS.map(m => `<div class="master${m.off ? ' off' : ''}"><div class="ava">${esc(m.n.charAt(0))}</div><h3>${esc(m.n)}</h3><p>${esc(loc(m.r))}</p>
+    <button class="pick" type="button" data-m="${esc(m.id)}"${m.off ? ' disabled' : ''}>${esc(m.off ? t('m_off') : t('m_book'))}</button></div>`).join('');
+}
+$('tabs').addEventListener('click', e => { const b = e.target.closest('.tab'); if (b) { cat = b.dataset.cat; renderTabs(); renderServices(); } });
+$('svc-out').addEventListener('click', e => {
+  const b = e.target.closest('.pick'); if (!b || b.disabled) return;
+  const id = b.dataset.id, i = sel.indexOf(id);
+  if (i >= 0) sel.splice(i, 1); else sel.push(id);
+  store.set('nf_sel', sel); renderServices(); renderBooking();
+});
+$('masters').addEventListener('click', e => {
+  const b = e.target.closest('.pick'); if (!b || b.disabled) return;
+  master = b.dataset.m; start = null; openDrawer(true); renderBooking();
+});
+
+/* ============ YOZILISH PANELI ============ */
+function dayList() {
+  const n = tashNow(), out = [];
+  for (let i = 0; i <= (C.ISH.oldindan || 14); i++) { const d = addDays(n.date, i); out.push({ d, closed: H.yopiq.includes(wdOf(d)) }); }
+  return out;
+}
+function renderBooking() {
+  const btn = $('bkbtn');
+  btn.textContent = pend ? `${t("no")} ${pend.id}: ${t('st_' + viewKind(pend))}` : (t('bk_btn') + (sel.length ? ` (${sel.length})` : ''));
+  $('dtitle').textContent = t('bk_title');
+  const has = sel.length > 0;
+  $('sel-empty').hidden = has; $('sel-empty').textContent = t('sel_empty');
+  $('bk-form').hidden = !has; $('sel-total').hidden = !has; $('sel-dur').hidden = !has;
+  $('sel-list').innerHTML = sel.map(id => { const i = svcById[id];
+    return `<li><div>${esc(loc(i.n))}<small>${esc(durTxt(i.min))} · ${fmt(i.p)}</small></div><button type="button" data-id="${esc(id)}" aria-label="x">✕</button></li>`; }).join('');
+  if (!has) return;
+  $('sel-sum').textContent = fmt(total()); $('sel-dur').textContent = t('dur') + ' ' + durTxt(totalMin());
+  const el = eligible();
+  if (master !== 'any' && !el.some(m => m.id === master)) master = 'any';
+  $('bk-master').innerHTML = `<option value="any">${esc(t('any_master'))}</option>` + el.map(m => `<option value="${esc(m.id)}"${m.id === master ? ' selected' : ''}>${esc(m.n)} · ${esc(loc(m.r))}</option>`).join('');
+  const days = dayList();
+  if (!date || !days.some(x => x.d === date && !x.closed)) { const f = days.find(x => !x.closed); date = f ? f.d : ''; start = null; }
+  $('bk-days').innerHTML = days.map(x => `<button type="button" class="day" data-d="${x.d}" aria-pressed="${x.d === date}"${x.closed ? ` disabled title="${esc(t('closed_day'))}"` : ''}>${esc(t('wd')[wdOf(x.d)])}<b>${+x.d.slice(8)}</b></button>`).join('');
+  if (el.length === 0) { $('bk-slots').innerHTML = ''; $('bk-hint').textContent = t('v_master'); return; }
+  loadBusy(date).then(drawSlots);
+  drawSlots();
+}
+async function loadBusy(d) {
+  if (DIRECT || !d || busyCache[d]) return;
+  try { busyCache[d] = (await api('/slots?date=' + d)).busy || []; } catch (_) { busyCache[d] = []; }
+}
+const overlap = (a, b, c, d) => a < d && c < b;
+function slotFree(s, dur, busy, el) {
+  const masters = master === 'any' ? el : el.filter(m => m.id === master);
+  return masters.some(m => !busy.some(x => x.m === m.id && overlap(s, s + dur, x.s, x.e)));
+}
+function drawSlots() {
+  const el = eligible(); if (!sel.length || !el.length || !date) return;
+  const dur = totalMin(), busy = busyCache[date] || [], n = tashNow(), step = C.ISH.qadam || 30, out = [];
+  if (!DIRECT && busyCache[date] === undefined) { $('bk-slots').innerHTML = ''; $('bk-hint').textContent = t('loading'); return; }
+  for (let s = H.dan; s + dur <= H.gacha; s += step) {
+    if (date === n.date && s < n.min + (C.ISH.minimal || 0)) continue;
+    if (slotFree(s, dur, busy, el)) out.push(s);
+  }
+  if (start !== null && !out.includes(start)) start = null;
+  $('bk-slots').innerHTML = out.map(s => `<button type="button" class="slot" data-s="${s}" aria-pressed="${s === start}">${hm(s)}</button>`).join('');
+  $('bk-hint').textContent = out.length ? '' : t('no_slots');
+}
+$('sel-list').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; sel = sel.filter(x => x !== b.dataset.id); store.set('nf_sel', sel); renderServices(); renderBooking(); });
+$('bk-master').addEventListener('change', e => { master = e.target.value; start = null; drawSlots(); });
+$('bk-days').addEventListener('click', e => { const b = e.target.closest('.day'); if (!b || b.disabled) return; date = b.dataset.d; start = null; renderBooking(); });
+$('bk-slots').addEventListener('click', e => { const b = e.target.closest('.slot'); if (!b) return; start = +b.dataset.s; drawSlots(); });
+
+function openDrawer(o) {
+  $('drawer').classList.toggle('open', o); $('scrim').classList.toggle('open', o);
+  $('drawer').setAttribute('aria-hidden', String(!o));
+  if (o) { delete busyCache[date]; renderBooking(); $('dclose').focus(); }
+}
+$('bkbtn').onclick = () => openDrawer(true);
+$('dclose').onclick = $('scrim').onclick = () => openDrawer(false);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { openDrawer(false); $('tkwrap').hidden = true; } });
+
+/* ============ YOZILISH YUBORISH ============ */
+let pend = store.get('nf_pend', null), pollTimer = null, polling = false;
+const WAIT_MS = 3 * 3600e3;
+const TERMINAL = s => s === 'done' || s === 'cancelled';
+const viewKind = b => (b.status === 'new' && Date.now() - b.ts > WAIT_MS) ? 'timeout' : b.status;
+const savePend = () => pend ? store.set('nf_pend', pend) : store.del('nf_pend');
+const stampNow = () => new Date().toLocaleString('ru-RU', { timeZone: 'Asia/Tashkent' });
+
+$('bk-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const msg = $('bmsg'), f = Object.fromEntries(new FormData($('bk-form')).entries());
+  msg.className = 'msg';
+  const bad = x => { msg.textContent = x; msg.className = 'msg bad'; };
+  if (!sel.length) return bad(t('v_services'));
+  if (!date || start === null) return bad(t('v_time'));
+  if (f.tel.replace(/\D/g, '').length < 9) return bad(t('v_phone'));
+  const el = eligible(); if (!el.length) return bad(t('v_master'));
+  const items = sel.map(id => ({ id, n: svcById[id].n.uz, min: svcById[id].min, p: svcById[id].p }));
+  const b = { id: 'B-' + Math.random().toString(36).slice(2, 7).toUpperCase(), ts: Date.now(), time: stampNow(), status: 'new', lang,
+    ism: f.ism.trim(), tel: f.tel.trim(), izoh: (f.izoh || '').trim(), date, start, master, items,
+    dur: totalMin(), total: total(), mn: '', lastUpd: 0 };
+  if (master !== 'any') b.mn = (MAS.find(m => m.id === master) || {}).n || '';
+  const btn = $('bk-form').querySelector('button[type=submit]'), old = btn.textContent;
+  btn.disabled = true; btn.textContent = t('sending');
+  try {
+    if (DIRECT) {
+      const r = await tg('sendMessage', { chat_id: C.CHAT_ID, text: bookText(b, 'new'), parse_mode: 'HTML', reply_markup: JSON.stringify({ inline_keyboard: keyboard('new', b) }) });
+      b.mid = r.message_id;
+    } else {
+      const j = await api('/book', { ism: b.ism, tel: b.tel, izoh: b.izoh, date, start, master, items: items.map(x => ({ id: x.id })), lang });
+      b.id = j.id; b.mn = j.mn || b.mn; b.total = j.total; b.dur = j.dur; if (j.items) b.items = j.items;
+    }
+    pend = b; savePend(); sel = []; store.set('nf_sel', sel); start = null; delete busyCache[date];
+    $('bk-form').reset(); renderServices(); renderStatus(); startPolling();
+  } catch (err) {
+    if (err.status === 409) { delete busyCache[date]; start = null; renderBooking(); bad(t('taken')); }
+    else bad(explain(err));
+  } finally { btn.disabled = false; btn.textContent = old; }
+});
+
+function renderStatus() {
+  const b = pend;
+  $('bk-box').hidden = !!b; $('status').hidden = !b;
+  renderBooking();
+  if (!b) return;
+  const k = viewKind(b);
+  $('st-title').textContent = `${t("no")} ${b.id}: ${t('st_' + k)}`;
+  $('st-text').textContent = t('stx_' + k) + ((k === 'cancelled' || k === 'timeout') ? ' ' + telShow(C.TELEFON) : '');
+  const steps = ['new', 'accepted', 'done'], idx = steps.indexOf(b.status);
+  $('st-steps').hidden = (k === 'cancelled' || k === 'timeout');
+  $('st-steps').innerHTML = steps.map((s, i) => `<li class="${i < idx ? 'done' : i === idx ? (s === 'done' ? 'done' : 'now') : ''}">${esc(t('st_' + s))}</li>`).join('');
+  $('st-ticket').hidden = !(b.status === 'accepted' || b.status === 'done');
+}
+function showTicket(b) {
+  const row = (a, v) => `<div><span>${esc(a)}</span><span>${esc(v)}</span></div>`;
+  $('tk-meta').innerHTML = row(t('tk_no'), b.id) + row(t('tk_date'), dShow(b.date)) + row(t('tk_time'), hm(b.start) + '–' + hm(b.start + b.dur)) +
+    row(t('tk_master'), b.mn || t('tk_any')) + row(t('tk_cust'), b.ism) + row(t('tk_phone'), b.tel) + row(t('tk_status'), t('st_' + b.status));
+  $('tk-rows').innerHTML = b.items.map(x => { const s = svcById[x.id]; return `<tr><td>${esc(s ? loc(s.n) : x.n)}</td><td>${fmt(x.p)}</td></tr>`; }).join('');
+  $('tk-sum').textContent = fmt(b.total);
+  $('tkwrap').hidden = false;
+}
+function downloadICS(b) {
+  const [y, mo, d] = b.date.split('-').map(Number);
+  const z = m => new Date(Date.UTC(y, mo - 1, d, 0, m - 300)).toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '');
+  const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Nafis//UZ', 'BEGIN:VEVENT', 'UID:' + b.id + '@nafis', 'DTSTAMP:' + z(0),
+    'DTSTART:' + z(b.start), 'DTEND:' + z(b.start + b.dur), 'SUMMARY:' + C.NOM + ': ' + b.items.map(x => x.n).join(', ').replace(/[,;]/g, ' '),
+    'LOCATION:' + C.MANZIL.replace(/,/g, '\\,'), 'DESCRIPTION:' + (b.mn ? b.mn + '. ' : '') + telShow(C.TELEFON),
+    'BEGIN:VALARM', 'TRIGGER:-PT2H', 'ACTION:DISPLAY', 'DESCRIPTION:Nafis', 'END:VALARM', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
+  a.download = 'nafis-' + b.id + '.ics'; document.body.appendChild(a); a.click(); a.remove();
+}
+$('tk-close').onclick = () => { $('tkwrap').hidden = true; };
+$('tk-print').onclick = () => window.print();
+$('tk-cal').onclick = () => pend && downloadICS(pend);
+$('st-ticket').onclick = () => showTicket(pend);
+$('st-new').onclick = () => {
+  if (pend && !TERMINAL(pend.status) && viewKind(pend) !== 'timeout' && !confirm(t('confirm_new'))) return;
+  stopPolling(); pend = null; savePend(); renderStatus();
+};
+function stopPolling() { if (pollTimer) { clearInterval(pollTimer); pollTimer = null; } }
+function startPolling() { stopPolling(); if (!pend || TERMINAL(pend.status)) return; pollTimer = setInterval(poll, DIRECT ? 3000 : 4000); poll(); }
+function applyStatus(s) {
+  const b = pend; if (!b || b.status === s) return;
+  const first = b.status === 'new' && s === 'accepted';
+  b.status = s; savePend(); renderStatus();
+  if (first) showTicket(b);
+  if (TERMINAL(s)) { stopPolling(); delete busyCache[b.date]; }
+}
+async function poll() {
+  const b = pend;
+  if (!b) { stopPolling(); return; }
+  if (viewKind(b) === 'timeout') { renderStatus(); stopPolling(); return; }
+  if (polling) return;
+  polling = true;
+  try {
+    if (!DIRECT) { const j = await api('/status?id=' + encodeURIComponent(b.id)); if (j.status) applyStatus(j.status); }
+    else {
+      const ups = await tg('getUpdates', { allowed_updates: JSON.stringify(['callback_query']), timeout: 0, limit: 100 });
+      let cur = b.status, last = null;
+      for (const u of ups.sort((x, y) => x.update_id - y.update_id)) {
+        const cq = u.callback_query; if (!cq || !cq.data || u.update_id <= (b.lastUpd || 0)) continue;
+        const [act, id] = cq.data.split(':');
+        if (id !== b.id || !ACT[act]) continue;
+        b.lastUpd = u.update_id;
+        if (ACT[act].from.includes(cur)) { cur = ACT[act].to; last = cq; }
+      }
+      if (cur !== b.status) {
+        if (last) tg('answerCallbackQuery', { callback_query_id: last.id, text: STATUS_LINE[cur] }).catch(() => {});
+        if (b.mid) tg('editMessageText', { chat_id: C.CHAT_ID, message_id: b.mid, text: bookText(b, cur), parse_mode: 'HTML', reply_markup: JSON.stringify({ inline_keyboard: keyboard(cur, b) }) }).catch(() => {});
+        applyStatus(cur);
+      } else savePend();
+    }
+  } catch (_) { /* keyingi urinishda */ }
+  finally { polling = false; }
+}
+
+/* ============ FIKRLAR, GALEREYA, XARITA ============ */
+async function sendSimple(path, payload, text) { return DIRECT ? tg('sendMessage', { chat_id: C.CHAT_ID, text, parse_mode: 'HTML' }) : api(path, payload); }
+$('rvform').addEventListener('submit', async e => {
+  e.preventDefault();
+  const form = $('rvform'), msg = $('rvmsg'), f = Object.fromEntries(new FormData(form).entries());
+  msg.className = 'msg';
+  const btn = form.querySelector('button[type=submit]'), old = btn.textContent; btn.disabled = true; btn.textContent = t('sending');
+  try {
+    await sendSimple('/review', f, ['⭐ <b>' + esc2(C.NOM) + ': yangi fikr</b> ' + '★'.repeat(+f.baho), '', '👤 ' + esc2(f.ism), '💬 ' + esc2(f.matn)].join('\n'));
+    msg.textContent = t('rv_ok'); msg.className = 'msg good'; form.reset();
+  } catch (err) { msg.textContent = explain(err); msg.className = 'msg bad'; }
+  finally { btn.disabled = false; btn.textContent = old; }
+});
+let REVIEWS = (C.FIKRLAR || []).slice();
+function renderReviews() {
+  const l = $('rv-list'); l.hidden = !REVIEWS.length;
+  l.innerHTML = REVIEWS.map(r => `<div class="rv"><div class="st">${'★'.repeat(Math.max(1, Math.min(5, +r.baho || 5)))}</div><p>${esc(r.matn)}</p><small>${esc(r.ism)}</small></div>`).join('');
+}
+function renderGallery() {
+  const g = C.GALEREYA || []; $('galereya').hidden = !g.length;
+  $('gal').innerHTML = g.map(f => `<img src="rasmlar/${esc(f)}" alt="" loading="lazy">`).join('');
+}
+function renderMap() {
+  const M = C.HARITA || {}, q = (M.lat && M.lng) ? `${M.lat},${M.lng}` : (M.qidiruv || C.MANZIL);
+  $('map').src = `https://www.google.com/maps?q=${encodeURIComponent(q)}&output=embed&hl=${lang}`;
+  $('route').href = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(q)}`;
+  $('route-y').href = `https://yandex.com/maps/?text=${encodeURIComponent(q)}`;
+}
+
+/* ============ TIL VA UMUMIY ============ */
+function applyI18n() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll('.langs button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+  document.title = `${C.NOM} | ${t('nav_services')}`;
+}
+function fillStatic() {
+  const tel = telShow(C.TELEFON);
+  $('logo').textContent = C.NOM;
+  ['navtel', 'c-tel'].forEach(id => { $(id).textContent = tel; $(id).href = 'tel:' + C.TELEFON; });
+  $('c-addr').textContent = $('tk-addr').textContent = C.MANZIL; $('tk-tel').textContent = tel; $('tk-name').textContent = C.NOM;
+  $('f-left').textContent = `© ${new Date().getFullYear()} ${C.NOM}`; $('f-right').textContent = `${C.MANZIL} · ${tel}`;
+  const soc = []; if (C.INSTAGRAM) soc.push('Instagram: @' + C.INSTAGRAM); if (C.TELEGRAM) soc.push('Telegram: @' + C.TELEGRAM);
+  $('c-social').textContent = soc.join(' · ');
+}
+function renderOpen() {
+  const n = tashNow(), wd = wdOf(n.date), b = $('open-badge');
+  const open = !H.yopiq.includes(wd) && n.min >= H.dan && n.min < H.gacha;
+  b.hidden = false; b.classList.toggle('on', open);
+  if (open) $('open-txt').textContent = t('open_on').replace('%s', hm(H.gacha));
+  else {
+    let d = 0, ok = !H.yopiq.includes(wd) && n.min < H.dan;
+    if (!ok) { d = 1; while (d < 8 && H.yopiq.includes((wd + d) % 7)) d++; }
+    $('open-txt').textContent = d >= 8 ? t('open_off_today') : t('open_off').replace('%s', (d ? (d === 1 ? '' : t('wd')[(wd + d) % 7] + ' ') : '') + hm(H.dan));
+  }
+}
+function renderHours() {
+  renderOpen();
+  $('hero-n').textContent = SVC.reduce((a, c) => a + c.items.length, 0); $('hero-m').textContent = MAS.filter(m => !m.off).length;
+  $('c-hours').textContent = `${hm(H.dan)} – ${hm(H.gacha)}`;
+  $('c-closed').textContent = H.yopiq.length ? t('closed') + ' ' + H.yopiq.map(d => t('wd')[d]).join(', ') : '';
+}
+function renderAll() {
+  indexData(); renderTabs(); renderServices(); renderMasters(); renderReviews(); renderMap(); renderHours();
+  pend ? renderStatus() : renderBooking();
+}
+function setLang(l) { lang = l; store.set('nf_lang', l); applyI18n(); renderAll(); }
+document.querySelector('.langs').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setLang(b.dataset.lang); });
+
+function enhance() {
+  const els = document.querySelectorAll('.how-c,.facts>div,.card,.master,.faq details,.rvform,.strip .wrap>div');
+  if (!('IntersectionObserver' in window)) return;
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  els.forEach(el => { el.classList.add('rvx'); io.observe(el); });
+  const up = $('totop'); window.addEventListener('scroll', () => { up.hidden = window.scrollY < 700; }, { passive: true });
+  const ld = document.createElement('script'); ld.type = 'application/ld+json';
+  ld.textContent = JSON.stringify({ '@context': 'https://schema.org', '@type': 'BeautySalon', name: C.NOM, telephone: C.TELEFON, address: C.MANZIL, openingHours: C.ISH.dan + '-' + C.ISH.gacha });
+  document.head.appendChild(ld);
+}
+fillStatic(); renderGallery(); applyI18n(); renderAll(); enhance();
+if (pend) startPolling();
+if (API) {
+  api('/cfg').then(j => {
+    if (j && j.services) { SVC = j.services; if (j.masters) MAS = j.masters; if (j.hours) H = { dan: toMin(j.hours.dan), gacha: toMin(j.hours.gacha), yopiq: j.hours.yopiq || [] }; renderAll(); }
+  }).catch(() => {});
+  api('/reviews').then(j => { if (j && j.reviews) { REVIEWS = (C.FIKRLAR || []).concat(j.reviews); renderReviews(); } }).catch(() => {});
+}
+window.NAFIS = { get svc() { return SVC; }, get mas() { return MAS; } };
+})();
+
+</script>
+<script>
+/* NAFIS KABINETI (admin panel). Saytni "#admin" bilan oching: index.html#admin */
+(function () {
+'use strict';
+const C = SOZLAMA, API = (C.API_URL || '').replace(/\/+$/, '');
+const esc = s => String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const fmt = n => Math.round(n).toLocaleString('ru-RU') + " so'm";
+const hm = m => String(Math.floor(m / 60)).padStart(2, '0') + ':' + String(m % 60).padStart(2, '0');
+const ST = { new: 'Yangi', accepted: 'Tasdiqlangan', done: 'Bajarilgan', cancelled: 'Bekor qilingan' };
+const WD = ['Yakshanba', 'Dushanba', 'Seshanba', 'Chorshanba', 'Payshanba', 'Juma', 'Shanba'];
+const WDORD = [1, 2, 3, 4, 5, 6, 0];
+const tashDay = ts => new Date(ts).toLocaleDateString('en-CA', { timeZone: 'Asia/Tashkent' });
+const addDays = (iso, n) => new Date(new Date(iso + 'T00:00:00Z').getTime() + n * 864e5).toISOString().slice(0, 10);
+let root, $, pw = '', tab = 'orders', filt = 'all', timer = null, list = [], seen = null, flash = null;
+let data = null, cat = 0, sday = '';
+const baseTitle = document.title;
+
+function build() {
+  root = document.createElement('div');
+  root.className = 'kb'; root.hidden = true;
+  root.innerHTML = `
+  <div class="kb-top">
+    <b>${esc(C.NOM)} · Kabinet</b>
+    <div class="kb-tabs" id="kb-tabs" hidden>
+      <button type="button" data-tab="orders" aria-pressed="true">Yozilishlar</button>
+      <button type="button" data-tab="svc" aria-pressed="false">Xizmatlar</button>
+      <button type="button" data-tab="team" aria-pressed="false">Ustalar va vaqt</button>
+    </div>
+    <span class="kb-sp"></span>
+    <button type="button" class="kb-b" id="kb-site">Saytga qaytish</button>
+    <button type="button" class="kb-b" id="kb-out" hidden>Chiqish</button>
+  </div>
+  <div class="kb-wrap">
+    <form class="kb-box kb-login" id="kb-login" hidden>
+      <h2>Kabinetga kirish</h2>
+      <label>Admin paroli<input type="password" id="kb-pw" autocomplete="current-password" required></label>
+      <button class="kb-btn" type="submit">Kirish</button>
+      <div class="kb-msg" id="kb-lmsg"></div>
+    </form>
+    <div class="kb-warn" id="kb-warn" hidden>Narx va ustalar serverga hali saqlanmagan, shuning uchun yozilish qabul qilinmaydi. "Xizmatlar" bo'limiga kirib, pastdagi <b>Serverga saqlash</b> tugmasini bir marta bosing.</div>
+
+    <section id="kb-orders" hidden>
+      <div class="kb-stats" id="kb-stats"></div>
+      <div class="kb-chips" id="kb-chips"></div>
+      <div id="kb-olist"></div>
+      <p class="kb-hint" id="kb-live">Ro'yxat har 10 soniyada yangilanadi. Yangi yozilish kelsa, ovoz chiqadi.</p>
+    </section>
+
+    <section id="kb-svc" hidden>
+      <div class="kb-box">
+        <h2>Xizmatlar va narxlar</h2>
+        <div class="kb-bar">
+          <label>Bo'lim<select id="kb-cat"></select></label>
+          <label>Qidirish<input type="search" id="kb-find" placeholder="Xizmat nomi"></label>
+          <button class="kb-btn dark" id="kb-add" type="button">+ Yangi xizmat</button>
+        </div>
+      </div>
+      <div id="kb-list"></div>
+    </section>
+
+    <section id="kb-team" hidden>
+      <div class="kb-box">
+        <h2>Ish vaqti</h2>
+        <div class="kb-bar">
+          <label>Ochilish<input type="time" id="kb-dan"></label>
+          <label>Yopilish<input type="time" id="kb-gacha"></label>
+          <label>Vaqt oralig'i (daqiqa)<input type="number" id="kb-qadam" min="10" max="120" step="5"></label>
+        </div>
+        <div class="kb-chk" id="kb-days" style="margin-top:10px"></div>
+        <p class="kb-hint">Belgilangan kunlar dam olish kuni hisoblanadi, ularga yozilib bo'lmaydi.</p>
+      </div>
+      <div class="kb-box">
+        <h2>Ustalar</h2>
+        <div id="kb-masters"></div>
+        <button class="kb-btn dark" id="kb-madd" type="button">+ Yangi usta</button>
+      </div>
+    </section>
+
+    <div class="kb-box" id="kb-savebox" hidden>
+      <h2>Saqlash</h2>
+      <div class="kb-bar">
+        <button class="kb-btn" id="kb-save" type="button" hidden>Serverga saqlash</button>
+        <button class="kb-btn light" id="kb-dl" type="button">xizmatlar.js ni yuklab olish</button>
+      </div>
+      <div class="kb-msg" id="kb-msg" role="status"></div>
+      <div id="kb-local" hidden><p class="kb-hint">Server ulanmagan: yuklab olingan <b>xizmatlar.js</b> ni sayt papkasidagi eski fayl o'rniga qo'ying. Ish vaqti va dam olish kunlarini <b>sozlamalar.js</b> dagi <b>ISH</b> qatorida o'zgartirasiz. Hozirgi qiymat:</p><pre id="kb-snip"></pre></div>
+    </div>
+  </div>`;
+  document.body.appendChild(root);
+  $ = id => root.querySelector('#' + id);
+  $('kb-site').onclick = () => { location.hash = ''; };
+  $('kb-out').onclick = logout;
+  $('kb-login').addEventListener('submit', e => { e.preventDefault(); login($('kb-pw').value); });
+  $('kb-tabs').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setTab(b.dataset.tab); });
+  $('kb-chips').addEventListener('click', e => { const b = e.target.closest('button'); if (b) { filt = b.dataset.f; drawOrders(); } });
+  $('kb-chips').addEventListener('change', e => { if (e.target.type === 'date') { sday = e.target.value; filt = 'day'; drawOrders(); } });
+  $('kb-olist').addEventListener('click', onAction);
+  wireEdit();
+}
+
+/* ============ KIRISH ============ */
+async function call(path, body) {
+  const opt = { headers: { 'x-admin': pw } };
+  if (body !== undefined) { opt.method = 'POST'; opt.headers['content-type'] = 'application/json'; opt.body = JSON.stringify(body); }
+  const res = await fetch(API + path, opt);
+  const j = await res.json().catch(() => ({}));
+  if (!res.ok) { const e = new Error(j.error || ('HTTP ' + res.status)); e.status = res.status; throw e; }
+  return j;
+}
+function show(loggedIn) {
+  $('kb-login').hidden = loggedIn; $('kb-tabs').hidden = !loggedIn; $('kb-out').hidden = !(loggedIn && API);
+  if (!loggedIn) { ['kb-orders', 'kb-svc', 'kb-team', 'kb-savebox', 'kb-warn'].forEach(i => { $(i).hidden = true; }); }
+  else setTab(tab);
+}
+async function login(p) {
+  const msg = $('kb-lmsg'); msg.className = 'kb-msg';
+  pw = p;
+  try {
+    const j = await call('/admin/bookings');
+    try { sessionStorage.setItem('nf_admin', pw); } catch (_) {}
+    gotList(j.bookings, true); show(true); startPolling();
+    await loadFromServer();
+  } catch (e) {
+    pw = '';
+    if (e.status === 401) { msg.textContent = "Parol noto'g'ri."; msg.className = 'kb-msg bad'; }
+    else if (!$('kb-login').hidden || p) { msg.textContent = "Serverga ulanib bo'lmadi: " + e.message; msg.className = 'kb-msg bad'; show(false); }
+  }
+}
+function logout() {
+  pw = ''; stopPolling(); try { sessionStorage.removeItem('nf_admin'); } catch (_) {}
+  $('kb-pw').value = ''; show(false);
+}
+function setTab(t) {
+  tab = t;
+  root.querySelectorAll('#kb-tabs button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tab === t)));
+  $('kb-orders').hidden = t !== 'orders'; $('kb-svc').hidden = t !== 'svc'; $('kb-team').hidden = t !== 'team';
+  $('kb-savebox').hidden = t === 'orders';
+  if (t === 'orders') drawOrders();
+}
+
+/* ============ YOZILISHLAR ============ */
+function startPolling() { stopPolling(); timer = setInterval(refresh, 10000); }
+function stopPolling() { if (timer) { clearInterval(timer); timer = null; } }
+async function refresh() { try { const j = await call('/admin/bookings'); gotList(j.bookings, false); } catch (e) { if (e.status === 401) logout(); } }
+function beep() {
+  try {
+    const A = window.AudioContext || window.webkitAudioContext, ctx = new A(), o = ctx.createOscillator(), g = ctx.createGain();
+    o.connect(g); g.connect(ctx.destination); o.type = 'sine'; o.frequency.value = 880; g.gain.value = 0.15;
+    o.start(); o.stop(ctx.currentTime + 0.25); setTimeout(() => ctx.close(), 600);
+  } catch (_) {}
+}
+function gotList(l, firstLoad) {
+  list = l || [];
+  const fresh = list.filter(o => o.status === 'new' && seen && !seen.has(o.id));
+  if (!seen) seen = new Set();
+  list.forEach(o => seen.add(o.id));
+  if (fresh.length && !firstLoad) {
+    beep();
+    if (!flash) { let on = false; flash = setInterval(() => { document.title = (on = !on) ? `(${fresh.length}) Yangi yozilish!` : baseTitle; }, 900); }
+  }
+  if (!root.hidden && tab === 'orders') drawOrders();
+}
+document.addEventListener('visibilitychange', () => { if (!document.hidden && flash) { clearInterval(flash); flash = null; document.title = baseTitle; } });
+
+function drawOrders() {
+  if (!API) {
+    $('kb-stats').innerHTML = ''; $('kb-chips').innerHTML = '';
+    $('kb-olist').innerHTML = `<div class="kb-box"><h2>Yozilishlar ro'yxati</h2><p>Ro'yxat, kunlik jadval va statistika server (worker) ulangandan keyin ishlaydi. Hozir yozilishlar faqat Telegram botga keladi.</p><p class="kb-hint">Ulash: <b>ULASH.md</b> faylining 4-bo'limi.</p></div>`;
+    $('kb-live').hidden = true; return;
+  }
+  const today = tashDay(Date.now()), tomorrow = addDays(today, 1);
+  if (!sday) sday = today;
+  const live = list.filter(x => x.status !== 'cancelled');
+  const td = live.filter(x => x.order.date === today);
+  const rev = td.filter(x => x.status !== 'new').reduce((s, x) => s + x.order.total, 0);
+  $('kb-stats').innerHTML = [['Bugungi yozilishlar', td.length], ['Bugungi tushum (tasdiqlangan)', fmt(rev)], ['Javob kutayotgan', list.filter(x => x.status === 'new').length], ['Ertaga', live.filter(x => x.order.date === tomorrow).length]]
+    .map(([a, b], i) => `<div class="kb-stat${i === 2 && b ? ' hot' : ''}"><span>${a}</span><b>${b}</b></div>`).join('');
+  const F = [['all', 'Hammasi'], ['new', 'Yangi'], ['accepted', 'Tasdiqlangan'], ['done', 'Bajarilgan'], ['cancelled', 'Bekor qilingan'], ['day', 'Kunlik jadval']];
+  $('kb-chips').innerHTML = F.map(([k, l]) => `<button type="button" data-f="${k}" aria-pressed="${k === filt}">${l}</button>`).join('') + `<input type="date" value="${esc(sday)}">`;
+  if (filt === 'day') { $('kb-olist').innerHTML = scheduleHTML(); return; }
+  const rows = list.filter(x => filt === 'all' || x.status === filt);
+  $('kb-olist').innerHTML = rows.length ? rows.map(card).join('') : '<p class="kb-hint">Bu bo\'limda yozilish yo\'q.</p>';
+}
+function scheduleHTML() {
+  const rows = list.filter(x => x.order.date === sday && x.status !== 'cancelled').sort((a, b) => a.order.start - b.order.start);
+  const ms = (data ? data.masters : (typeof MASTERS !== 'undefined' ? MASTERS : [])).map(m => ({ id: m.id, n: m.n }));
+  rows.forEach(x => { if (x.order.m && !ms.some(m => m.id === x.order.m)) ms.push({ id: x.order.m, n: x.order.mn || x.order.m }); });
+  const cols = ms.map(m => {
+    const mine = rows.filter(x => x.order.m === m.id);
+    return `<div class="kb-col"><h3>${esc(m.n)}</h3>${mine.map(x => `<div class="kb-slot s-${x.status}"><b>${hm(x.order.start)}–${hm(x.order.start + x.order.dur)}</b>${esc(x.order.ism)} · ${esc(x.order.items.map(i => i.n).join(', '))}</div>`).join('') || '<p class="kb-hint">Bo\'sh</p>'}</div>`;
+  }).join('');
+  return rows.length ? `<div class="kb-cols">${cols}</div>` : '<p class="kb-hint">Bu kunga yozilish yo\'q.</p>';
+}
+function buttons(x) {
+  const b = (a, t, cls) => `<button type="button" class="kb-btn ${cls || ''}" data-act="${a}" data-id="${esc(x.id)}">${t}</button>`;
+  if (x.status === 'new') return b('ok', '✅ Tasdiqlash') + b('no', '❌ Bekor qilish', 'light');
+  if (x.status === 'accepted') return b('done', '🏁 Bajarildi') + b('no', '❌ Bekor qilish', 'light');
+  return '';
+}
+function card(x) {
+  const o = x.order;
+  return `<article class="kb-o s-${x.status}">
+    <div class="kb-oh"><b>${esc(x.id)}</b><span class="kb-st">${ST[x.status]}</span><small>${esc(o.time)}</small></div>
+    <div class="kb-ob">
+      <div><b>${esc(o.ism)}</b> · <a href="tel:${esc(o.tel)}">${esc(o.tel)}</a></div>
+      <div>🗓 ${esc(o.date)} · ${hm(o.start)}–${hm(o.start + o.dur)} · Usta: ${esc(o.mn || '-')}${o.izoh ? ' · 💬 ' + esc(o.izoh) : ''}</div>
+      <ul>${o.items.map(i => `<li>${esc(i.n)} <span>${fmt(i.p)}</span></li>`).join('')}</ul>
+      <div class="kb-ot">Jami <b>${fmt(o.total)}</b></div>
+    </div>
+    <div class="kb-oa">${buttons(x)}</div></article>`;
+}
+async function onAction(e) {
+  const b = e.target.closest('[data-act]'); if (!b) return;
+  b.disabled = true;
+  try { await call('/admin/status', { id: b.dataset.id, act: b.dataset.act }); await refresh(); }
+  catch (err) { alert(err.message); await refresh(); }
+}
+
+/* ============ XIZMAT / USTA / VAQT TAHRIRI ============ */
+const say = (t, ok) => { const m = $('kb-msg'); m.textContent = t; m.className = 'kb-msg ' + (ok ? 'good' : 'bad'); };
+function initData() {
+  const ish = C.ISH || {};
+  data = { services: JSON.parse(JSON.stringify(SERVICES)), masters: JSON.parse(JSON.stringify(MASTERS)),
+    hours: { dan: ish.dan || '09:00', gacha: ish.gacha || '20:00', yopiq: (ish.yopiq || []).slice(), qadam: ish.qadam || 30, minimal: ish.minimal == null ? 30 : ish.minimal, oldindan: ish.oldindan || 14 } };
+  cat = 0; drawEdit();
+}
+async function loadFromServer() {
+  try {
+    const j = await (await fetch(API + '/cfg')).json();
+    if (j && j.services) { data = { services: j.services, masters: j.masters || [], hours: Object.assign({ qadam: 30, minimal: 30, oldindan: 14 }, j.hours) }; cat = 0; drawEdit(); $('kb-warn').hidden = true; }
+    else $('kb-warn').hidden = false;
+  } catch (_) {}
+}
+function drawEdit() {
+  $('kb-cat').innerHTML = data.services.map((c, i) => `<option value="${i}"${i === cat ? ' selected' : ''}>${esc(c.n.uz)} (${c.items.length})</option>`).join('');
+  drawList(); drawTeam();
+}
+function drawList() {
+  const q = $('kb-find').value.trim().toLowerCase(), c = data.services[cat];
+  $('kb-list').innerHTML = (c ? c.items : []).map((it, i) => ({ it, i })).filter(({ it }) => !q || it.n.uz.toLowerCase().includes(q)).map(({ it, i }) => `
+    <div class="kb-item${it.off ? ' off' : ''}" data-i="${i}">
+      <div class="kb-g1">
+        <label>Nomi (UZ)<input data-k="n.uz" value="${esc(it.n.uz)}"></label>
+        <label>Narx (so'm)<input data-k="p" type="number" min="0" step="1000" value="${it.p}"></label>
+        <label>Davomiyligi (daqiqa)<input data-k="min" type="number" min="5" max="600" step="5" value="${it.min}"></label>
+        <button class="kb-btn red" data-del="1" type="button">O'chirish</button>
+      </div>
+      <div class="kb-g2">
+        <label>Nomi (RU)<input data-k="n.ru" value="${esc(it.n.ru || '')}"></label>
+        <label>Nomi (EN)<input data-k="n.en" value="${esc(it.n.en || '')}"></label>
+        <label>Kod<input value="${esc(it.id)}" disabled></label>
+      </div>
+      <div class="kb-chk">
+        <label><input type="checkbox" data-k="pop"${it.pop ? ' checked' : ''}> Mashhur</label>
+        <label><input type="checkbox" data-k="off"${it.off ? ' checked' : ''}> Hozir yo'q</label>
+      </div></div>`).join('') || '<p class="kb-hint">Xizmat topilmadi.</p>';
+}
+function drawTeam() {
+  const h = data.hours;
+  $('kb-dan').value = h.dan; $('kb-gacha').value = h.gacha; $('kb-qadam').value = h.qadam || 30;
+  $('kb-days').innerHTML = WDORD.map(d => `<label><input type="checkbox" data-d="${d}"${h.yopiq.includes(d) ? ' checked' : ''}> ${WD[d]}</label>`).join('');
+  $('kb-masters').innerHTML = data.masters.map((m, i) => `
+    <div class="kb-item${m.off ? ' off' : ''}" data-mi="${i}">
+      <div class="kb-g1">
+        <label>Ismi<input data-mk="n" value="${esc(m.n)}"></label>
+        <label>Yo'nalishi (UZ)<input data-mk="r.uz" value="${esc((m.r && m.r.uz) || '')}"></label>
+        <label>Yo'nalishi (RU)<input data-mk="r.ru" value="${esc((m.r && m.r.ru) || '')}"></label>
+        <button class="kb-btn red" data-mdel="1" type="button">O'chirish</button>
+      </div>
+      <div class="kb-chk">
+        <label><input type="checkbox" data-mk="r.en-dummy" hidden></label>
+        ${data.services.map(c => `<label><input type="checkbox" data-mc="${esc(c.id)}"${(m.cats || []).includes(c.id) ? ' checked' : ''}> ${esc(c.n.uz)}</label>`).join('')}
+        <label><input type="checkbox" data-mk="off"${m.off ? ' checked' : ''}> Dam olmoqda</label>
+      </div></div>`).join('');
+  $('kb-snip').textContent = `ISH: { dan: "${h.dan}", gacha: "${h.gacha}", yopiq: [${h.yopiq.join(', ')}], qadam: ${h.qadam || 30}, oldindan: ${h.oldindan || 14}, minimal: ${h.minimal == null ? 30 : h.minimal} },`;
+}
+function setPath(o, path, v) { const p = path.split('.'); const last = p.pop(); let t = o; p.forEach(k => { t = t[k] = t[k] || {}; }); t[last] = v; }
+function check() {
+  for (const c of data.services) for (const i of c.items) {
+    i.n.uz = i.n.uz.trim();
+    if (!i.n.uz) return "Nomi bo'sh xizmat bor. Nomini yozing yoki o'chiring.";
+    if (!i.n.ru) i.n.ru = i.n.uz; if (!i.n.en) i.n.en = i.n.uz;
+  }
+  for (const m of data.masters) { m.n = m.n.trim(); if (!m.n) return "Ismi bo'sh usta bor."; m.r = m.r || {}; m.r.uz = m.r.uz || ''; m.r.ru = m.r.ru || m.r.uz; m.r.en = m.r.en || m.r.uz; }
+  const h = data.hours;
+  if (!h.dan || !h.gacha || h.dan >= h.gacha) return "Ish vaqti noto'g'ri: ochilish yopilishdan oldin bo'lsin.";
+  return '';
+}
+function servicesJS() {
+  const cs = data.services.map(c => ` {"id":${JSON.stringify(c.id)},"n":${JSON.stringify(c.n)},"items":[\n` + c.items.map(i => '  ' + JSON.stringify(i)).join(',\n') + '\n ]}');
+  return "/* NAFIS XIZMATLARI. Kabinet orqali tahrirlab, yuklab olingan faylni shu yerga qo'ying. */\nconst SERVICES = [\n" + cs.join(',\n') + '\n];\nconst MASTERS = ' + JSON.stringify(data.masters, null, 1) + ';\n';
+}
+function wireEdit() {
+  $('kb-list').addEventListener('input', e => {
+    const card = e.target.closest('.kb-item'); if (!card) return;
+    const it = data.services[cat].items[+card.dataset.i], k = e.target.dataset.k; if (!k) return;
+    if (k === 'p') it.p = Math.max(0, Math.round(+e.target.value) || 0);
+    else if (k === 'min') it.min = Math.max(5, Math.round(+e.target.value) || 5);
+    else if (k === 'pop' || k === 'off') { e.target.checked ? it[k] = 1 : delete it[k]; if (k === 'off') card.classList.toggle('off', e.target.checked); }
+    else setPath(it, k, e.target.value);
+  });
+  $('kb-list').addEventListener('click', e => {
+    if (!e.target.dataset.del) return;
+    const i = +e.target.closest('.kb-item').dataset.i, it = data.services[cat].items[i];
+    if (!confirm(`"${it.n.uz}" o'chirilsinmi?`)) return;
+    data.services[cat].items.splice(i, 1); drawEdit();
+  });
+  $('kb-add').onclick = () => {
+    const ids = new Set(data.services.flatMap(c => c.items.map(i => i.id))); let n = 1; while (ids.has('x' + n)) n++;
+    data.services[cat].items.unshift({ id: 'x' + n, n: { uz: 'Yangi xizmat', ru: 'Новая услуга', en: 'New service' }, min: 30, p: 50000 });
+    $('kb-find').value = ''; drawEdit();
+    const f = root.querySelector('#kb-list .kb-item input'); if (f) { f.focus(); f.select(); }
+  };
+  $('kb-cat').onchange = e => { cat = +e.target.value; drawList(); };
+  $('kb-find').oninput = drawList;
+  $('kb-dan').onchange = e => { data.hours.dan = e.target.value; drawTeam(); };
+  $('kb-gacha').onchange = e => { data.hours.gacha = e.target.value; drawTeam(); };
+  $('kb-qadam').onchange = e => { data.hours.qadam = Math.max(10, Math.min(120, Math.round(+e.target.value) || 30)); drawTeam(); };
+  $('kb-days').addEventListener('change', e => {
+    const d = +e.target.dataset.d, s = new Set(data.hours.yopiq); e.target.checked ? s.add(d) : s.delete(d);
+    data.hours.yopiq = [...s].sort(); drawTeam();
+  });
+  $('kb-masters').addEventListener('input', e => {
+    const card = e.target.closest('.kb-item'); if (!card) return;
+    const m = data.masters[+card.dataset.mi], k = e.target.dataset.mk, c = e.target.dataset.mc;
+    if (c) { const s = new Set(m.cats || []); e.target.checked ? s.add(c) : s.delete(c); m.cats = [...s]; return; }
+    if (!k || k.endsWith('dummy')) return;
+    if (k === 'off') { e.target.checked ? m.off = 1 : delete m.off; card.classList.toggle('off', e.target.checked); }
+    else setPath(m, k, e.target.value);
+  });
+  $('kb-masters').addEventListener('click', e => {
+    if (!e.target.dataset.mdel) return;
+    const i = +e.target.closest('.kb-item').dataset.mi;
+    if (!confirm(`"${data.masters[i].n}" o'chirilsinmi?`)) return;
+    data.masters.splice(i, 1); drawTeam();
+  });
+  $('kb-madd').onclick = () => {
+    const ids = new Set(data.masters.map(m => m.id)); let n = 1; while (ids.has('m' + n)) n++;
+    data.masters.push({ id: 'm' + n, n: 'Yangi usta', r: { uz: '', ru: '', en: '' }, cats: [] }); drawTeam();
+  };
+  $('kb-dl').onclick = () => {
+    const err = check(); if (err) return say(err, false);
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([servicesJS()], { type: 'text/javascript' }));
+    a.download = 'xizmatlar.js'; document.body.appendChild(a); a.click(); a.remove();
+    say('xizmatlar.js yuklab olindi.', true);
+  };
+  $('kb-save').onclick = async () => {
+    const err = check(); if (err) return say(err, false);
+    $('kb-save').disabled = true;
+    try { await call('/cfg', data); say("Saqlandi! Sayt yangi narx, usta va ish vaqtini hozirdanoq ishlatadi.", true); $('kb-warn').hidden = true; }
+    catch (e) { say("Saqlab bo'lmadi: " + e.message, false); }
+    finally { $('kb-save').disabled = false; }
+  };
+}
+
+/* ============ OCHISH / YOPISH ============ */
+function open() {
+  if (!root) { build(); initData(); }
+  root.hidden = false; document.body.style.overflow = 'hidden';
+  $('kb-save').hidden = !API; $('kb-local').hidden = !!API;
+  if (!API) { show(true); return; }
+  let saved = ''; try { saved = sessionStorage.getItem('nf_admin') || ''; } catch (_) {}
+  if (pw) { show(true); startPolling(); refresh(); return; }
+  show(false);
+  if (saved) login(saved); else $('kb-pw').focus();
+}
+function close() { if (!root) return; root.hidden = true; document.body.style.overflow = ''; stopPolling(); }
+function sync() { if (location.hash === '#admin') open(); else close(); }
+window.addEventListener('hashchange', sync);
+sync();
+})();
+
+</script>
+</body>
+</html>
